@@ -1,0 +1,6 @@
+*Micro*
+STM32F401RCT6
+*Regulator*
+AZ34063UMTR-G1
+*RS485 Transceiver*
+ST485CDR
