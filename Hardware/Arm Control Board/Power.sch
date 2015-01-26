@@ -69,15 +69,13 @@ F 3 "" H 4000 750 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 750  3500 750 
+	3100 750  3750 750 
 Wire Wire Line
 	3500 750  3500 1200
 Wire Wire Line
 	3500 1200 3650 1200
 Wire Wire Line
-	4250 750  4500 750 
-Wire Wire Line
-	4500 750  5500 750 
+	4250 750  5500 750 
 Wire Wire Line
 	4500 750  4500 1200
 Wire Wire Line
@@ -145,9 +143,7 @@ F 3 "" H 5150 1950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1250 2200 1650 2200
-Wire Wire Line
-	1650 2200 5150 2200
+	1250 2200 5150 2200
 $Comp
 L C C?
 U 1 1 54C6806A
@@ -199,9 +195,7 @@ $EndComp
 Wire Wire Line
 	4400 1500 4500 1500
 Wire Wire Line
-	4500 1500 4500 1900
-Wire Wire Line
-	4500 1900 4500 1950
+	4500 1500 4500 1950
 $Comp
 L C C?
 U 1 1 54C68089
@@ -242,17 +236,11 @@ F 3 "" H 2650 1600 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2250 1300 2350 1300
-Wire Wire Line
-	2350 1300 2650 1300
-Wire Wire Line
-	2650 1300 3650 1300
+	2250 1300 3650 1300
 Wire Wire Line
 	2650 1300 2650 1350
 Wire Wire Line
-	2650 1900 4000 1900
-Wire Wire Line
-	4000 1900 4500 1900
+	2650 1900 4500 1900
 Connection ~ 4500 1900
 Wire Wire Line
 	4000 1750 4000 1900
@@ -290,9 +278,7 @@ Connection ~ 2350 1300
 Wire Wire Line
 	1800 1600 1650 1600
 Wire Wire Line
-	1650 1300 1650 1600
-Wire Wire Line
-	1650 1600 1650 2200
+	1650 1300 1650 2200
 Wire Wire Line
 	1650 1300 1750 1300
 Connection ~ 1650 1600
@@ -302,9 +288,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 1400 4650 1700
 Wire Wire Line
-	4650 1700 4850 1700
-Wire Wire Line
-	4850 1700 5150 1700
+	4650 1700 5150 1700
 Connection ~ 4850 1700
 Text Notes 2000 950  0    60   ~ 0
 Servo Regulator 1
@@ -333,15 +317,13 @@ F 3 "" H 4000 3050 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 3050 3500 3050
+	3100 3050 3750 3050
 Wire Wire Line
 	3500 3050 3500 3500
 Wire Wire Line
 	3500 3500 3650 3500
 Wire Wire Line
-	4250 3050 4500 3050
-Wire Wire Line
-	4500 3050 5500 3050
+	4250 3050 5500 3050
 Wire Wire Line
 	4500 3050 4500 3500
 Wire Wire Line
@@ -409,9 +391,7 @@ F 3 "" H 5150 4250 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1250 4500 1650 4500
-Wire Wire Line
-	1650 4500 5150 4500
+	1250 4500 5150 4500
 $Comp
 L C C?
 U 1 1 54C68C3A
@@ -463,9 +443,7 @@ $EndComp
 Wire Wire Line
 	4400 3800 4500 3800
 Wire Wire Line
-	4500 3800 4500 4200
-Wire Wire Line
-	4500 4200 4500 4250
+	4500 3800 4500 4250
 $Comp
 L C C?
 U 1 1 54C68C57
@@ -506,17 +484,11 @@ F 3 "" H 2650 3900 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2250 3600 2350 3600
-Wire Wire Line
-	2350 3600 2650 3600
-Wire Wire Line
-	2650 3600 3650 3600
+	2250 3600 3650 3600
 Wire Wire Line
 	2650 3600 2650 3650
 Wire Wire Line
-	2650 4200 4000 4200
-Wire Wire Line
-	4000 4200 4500 4200
+	2650 4200 4500 4200
 Connection ~ 4500 4200
 Wire Wire Line
 	4000 4050 4000 4200
@@ -554,9 +526,7 @@ Connection ~ 2350 3600
 Wire Wire Line
 	1800 3900 1650 3900
 Wire Wire Line
-	1650 3600 1650 3900
-Wire Wire Line
-	1650 3900 1650 4500
+	1650 3600 1650 4500
 Wire Wire Line
 	1650 3600 1750 3600
 Connection ~ 1650 3900
@@ -566,9 +536,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 3700 4650 4000
 Wire Wire Line
-	4650 4000 4850 4000
-Wire Wire Line
-	4850 4000 5150 4000
+	4650 4000 5150 4000
 Connection ~ 4850 4000
 Text Notes 2000 3250 0    60   ~ 0
 Servo Regulator 2
@@ -597,15 +565,13 @@ F 3 "" H 4000 5450 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 5450 3500 5450
+	3100 5450 3750 5450
 Wire Wire Line
 	3500 5450 3500 5900
 Wire Wire Line
 	3500 5900 3650 5900
 Wire Wire Line
-	4250 5450 4500 5450
-Wire Wire Line
-	4500 5450 5500 5450
+	4250 5450 5500 5450
 Wire Wire Line
 	4500 5450 4500 5900
 Wire Wire Line
@@ -673,9 +639,7 @@ F 3 "" H 5150 6650 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1250 6900 1650 6900
-Wire Wire Line
-	1650 6900 5150 6900
+	1250 6900 5150 6900
 $Comp
 L C C?
 U 1 1 54C69DC2
@@ -727,9 +691,7 @@ $EndComp
 Wire Wire Line
 	4400 6200 4500 6200
 Wire Wire Line
-	4500 6200 4500 6600
-Wire Wire Line
-	4500 6600 4500 6650
+	4500 6200 4500 6650
 $Comp
 L C C?
 U 1 1 54C69DDF
@@ -770,17 +732,11 @@ F 3 "" H 2650 6300 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2250 6000 2350 6000
-Wire Wire Line
-	2350 6000 2650 6000
-Wire Wire Line
-	2650 6000 3650 6000
+	2250 6000 3650 6000
 Wire Wire Line
 	2650 6000 2650 6050
 Wire Wire Line
-	2650 6600 4000 6600
-Wire Wire Line
-	4000 6600 4500 6600
+	2650 6600 4500 6600
 Connection ~ 4500 6600
 Wire Wire Line
 	4000 6450 4000 6600
@@ -818,9 +774,7 @@ Connection ~ 2350 6000
 Wire Wire Line
 	1800 6300 1650 6300
 Wire Wire Line
-	1650 6000 1650 6300
-Wire Wire Line
-	1650 6300 1650 6900
+	1650 6000 1650 6900
 Wire Wire Line
 	1650 6000 1750 6000
 Connection ~ 1650 6300
@@ -830,9 +784,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 6100 4650 6400
 Wire Wire Line
-	4650 6400 4850 6400
-Wire Wire Line
-	4850 6400 5150 6400
+	4650 6400 5150 6400
 Connection ~ 4850 6400
 Text Notes 2000 5650 0    60   ~ 0
 Servo Regulator 3
@@ -874,15 +826,13 @@ F 3 "" H 9100 750 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8850 750  8600 750 
+	8200 750  8850 750 
 Wire Wire Line
 	8600 750  8600 1200
 Wire Wire Line
 	8600 1200 8750 1200
 Wire Wire Line
-	9350 750  9600 750 
-Wire Wire Line
-	9600 750  10600 750 
+	9350 750  10600 750 
 Wire Wire Line
 	9600 750  9600 1200
 Wire Wire Line
@@ -950,9 +900,7 @@ F 3 "" H 10250 1950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6350 2200 6750 2200
-Wire Wire Line
-	6750 2200 10250 2200
+	6350 2200 10250 2200
 $Comp
 L C C?
 U 1 1 54C6B9C2
@@ -1004,9 +952,7 @@ $EndComp
 Wire Wire Line
 	9500 1500 9600 1500
 Wire Wire Line
-	9600 1500 9600 1900
-Wire Wire Line
-	9600 1900 9600 1950
+	9600 1500 9600 1950
 $Comp
 L C C?
 U 1 1 54C6B9DE
@@ -1047,17 +993,11 @@ F 3 "" H 7750 1600 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7350 1300 7450 1300
-Wire Wire Line
-	7450 1300 7750 1300
-Wire Wire Line
-	7750 1300 8750 1300
+	7350 1300 8750 1300
 Wire Wire Line
 	7750 1300 7750 1350
 Wire Wire Line
-	7750 1900 9100 1900
-Wire Wire Line
-	9100 1900 9600 1900
+	7750 1900 9600 1900
 Connection ~ 9600 1900
 Wire Wire Line
 	9100 1750 9100 1900
@@ -1095,9 +1035,7 @@ Connection ~ 7450 1300
 Wire Wire Line
 	6900 1600 6750 1600
 Wire Wire Line
-	6750 1300 6750 1600
-Wire Wire Line
-	6750 1600 6750 2200
+	6750 1300 6750 2200
 Wire Wire Line
 	6750 1300 6850 1300
 Connection ~ 6750 1600
@@ -1107,9 +1045,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 1400 9750 1700
 Wire Wire Line
-	9750 1700 9950 1700
-Wire Wire Line
-	9950 1700 10250 1700
+	9750 1700 10250 1700
 Connection ~ 9950 1700
 Text Notes 7100 950  0    60   ~ 0
 Servo Regulator 4
@@ -1149,15 +1085,13 @@ F 3 "" H 9100 3050 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8850 3050 8600 3050
+	8200 3050 8850 3050
 Wire Wire Line
 	8600 3050 8600 3500
 Wire Wire Line
 	8600 3500 8750 3500
 Wire Wire Line
-	9350 3050 9600 3050
-Wire Wire Line
-	9600 3050 10600 3050
+	9350 3050 10600 3050
 Wire Wire Line
 	9600 3050 9600 3500
 Wire Wire Line
@@ -1225,9 +1159,7 @@ F 3 "" H 10250 4250 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6350 4500 6750 4500
-Wire Wire Line
-	6750 4500 10250 4500
+	6350 4500 10250 4500
 $Comp
 L C C?
 U 1 1 54C6E38B
@@ -1279,9 +1211,7 @@ $EndComp
 Wire Wire Line
 	9500 3800 9600 3800
 Wire Wire Line
-	9600 3800 9600 4200
-Wire Wire Line
-	9600 4200 9600 4250
+	9600 3800 9600 4250
 $Comp
 L C C?
 U 1 1 54C6E3A8
@@ -1322,17 +1252,11 @@ F 3 "" H 7750 3900 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7350 3600 7450 3600
-Wire Wire Line
-	7450 3600 7750 3600
-Wire Wire Line
-	7750 3600 8750 3600
+	7350 3600 8750 3600
 Wire Wire Line
 	7750 3600 7750 3650
 Wire Wire Line
-	7750 4200 9100 4200
-Wire Wire Line
-	9100 4200 9600 4200
+	7750 4200 9600 4200
 Connection ~ 9600 4200
 Wire Wire Line
 	9100 4050 9100 4200
@@ -1370,9 +1294,7 @@ Connection ~ 7450 3600
 Wire Wire Line
 	6900 3900 6750 3900
 Wire Wire Line
-	6750 3600 6750 3900
-Wire Wire Line
-	6750 3900 6750 4500
+	6750 3600 6750 4500
 Wire Wire Line
 	6750 3600 6850 3600
 Connection ~ 6750 3900
@@ -1382,9 +1304,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 3700 9750 4000
 Wire Wire Line
-	9750 4000 9950 4000
-Wire Wire Line
-	9950 4000 10250 4000
+	9750 4000 10250 4000
 Connection ~ 9950 4000
 Text Notes 7100 3250 0    60   ~ 0
 Servo Regulator 5
@@ -1401,4 +1321,19 @@ F 3 "" H 10600 3050 60  0000 C CNN
 	1    10600 3050
 	1    0    0    -1  
 $EndComp
+Connection ~ 8600 3050
+Text HLabel 8200 3050 0    60   Input ~ 0
+REG5EN
+Text HLabel 8200 750  0    60   Input ~ 0
+REG4EN
+Connection ~ 8600 750 
+Text HLabel 3100 5450 0    60   Input ~ 0
+REG3EN
+Connection ~ 3500 5450
+Text HLabel 3100 3050 0    60   Input ~ 0
+REG2EN
+Connection ~ 3500 3050
+Text HLabel 3100 750  0    60   Input ~ 0
+REG1EN
+Connection ~ 3500 750 
 $EndSCHEMATC
