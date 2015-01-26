@@ -1,6 +1,8 @@
 *Micro*
 STM32F401RCT6
 *Regulator*
-AZ34063UMTR-G1
+AZ34063UMTR-G1 (Only 1.2A)
+AP65552SP-13 (5A sustained)
 *RS485 Transceiver*
-ST485CDR
+ST485CDR - More expensive
+SN75176BDR - from TI, less expensive
