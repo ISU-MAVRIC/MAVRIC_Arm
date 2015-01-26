@@ -292,7 +292,7 @@ Wire Wire Line
 Connection ~ 4850 1700
 Text Notes 2000 950  0    60   ~ 0
 Servo Regulator 1
-Text HLabel 1250 2200 0    60   Input ~ 0
+Text HLabel 1250 2200 0    60   Output ~ 0
 REG1+5V
 $Comp
 L AP65552SP-13 U?
@@ -540,7 +540,7 @@ Wire Wire Line
 Connection ~ 4850 4000
 Text Notes 2000 3250 0    60   ~ 0
 Servo Regulator 2
-Text HLabel 1250 4500 0    60   Input ~ 0
+Text HLabel 1250 4500 0    60   Output ~ 0
 REG2+5V
 $Comp
 L AP65552SP-13 U?
@@ -788,7 +788,7 @@ Wire Wire Line
 Connection ~ 4850 6400
 Text Notes 2000 5650 0    60   ~ 0
 Servo Regulator 3
-Text HLabel 1250 6900 0    60   Input ~ 0
+Text HLabel 1250 6900 0    60   Output ~ 0
 REG3+5V
 $Comp
 L +12V #PWR?
@@ -1049,7 +1049,7 @@ Wire Wire Line
 Connection ~ 9950 1700
 Text Notes 7100 950  0    60   ~ 0
 Servo Regulator 4
-Text HLabel 6350 2200 0    60   Input ~ 0
+Text HLabel 6350 2200 0    60   Output ~ 0
 REG4+5V
 $Comp
 L +12V #PWR?
@@ -1308,19 +1308,8 @@ Wire Wire Line
 Connection ~ 9950 4000
 Text Notes 7100 3250 0    60   ~ 0
 Servo Regulator 5
-Text HLabel 6350 4500 0    60   Input ~ 0
+Text HLabel 6350 4500 0    60   Output ~ 0
 REG5+5V
-$Comp
-L +12V #PWR?
-U 1 1 54C6E3E4
-P 10600 3050
-F 0 "#PWR?" H 10600 2900 60  0001 C CNN
-F 1 "+12V" H 10600 3190 60  0000 C CNN
-F 2 "" H 10600 3050 60  0000 C CNN
-F 3 "" H 10600 3050 60  0000 C CNN
-	1    10600 3050
-	1    0    0    -1  
-$EndComp
 Connection ~ 8600 3050
 Text HLabel 8200 3050 0    60   Input ~ 0
 REG5EN
@@ -1336,4 +1325,178 @@ Connection ~ 3500 3050
 Text HLabel 3100 750  0    60   Input ~ 0
 REG1EN
 Connection ~ 3500 750 
+$Comp
+L AOZ1280CI U?
+U 1 1 54C78E4A
+P 9350 5700
+F 0 "U?" H 9150 5350 60  0000 C CNN
+F 1 "AOZ1280CI" H 9150 5850 60  0000 C CNN
+F 2 "" H 9350 5700 60  0000 C CNN
+F 3 "" H 9350 5700 60  0000 C CNN
+	1    9350 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 5800 9500 5800
+$Comp
+L C C?
+U 1 1 54C7A7D0
+P 10300 6000
+F 0 "C?" H 10350 6100 50  0000 L CNN
+F 1 "4.7uF" H 10350 5900 50  0000 L CNN
+F 2 "" H 10338 5850 30  0000 C CNN
+F 3 "" H 10300 6000 60  0000 C CNN
+	1    10300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54C7A8A9
+P 10300 6200
+F 0 "#PWR?" H 10300 5950 60  0001 C CNN
+F 1 "GND" H 10300 6050 60  0000 C CNN
+F 2 "" H 10300 6200 60  0000 C CNN
+F 3 "" H 10300 6200 60  0000 C CNN
+	1    10300 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5900 10050 5900
+Wire Wire Line
+	10050 5900 10050 6000
+Text HLabel 10050 6000 3    60   Input ~ 0
+REG6EN
+Wire Wire Line
+	10600 750  10600 5800
+Connection ~ 10600 3050
+$Comp
+L INDUCTOR_SMALL L?
+U 1 1 54C7DB1A
+P 8050 5150
+F 0 "L?" H 8050 5250 50  0000 C CNN
+F 1 "2.2uH" H 8050 5100 50  0000 C CNN
+F 2 "" H 8050 5150 60  0000 C CNN
+F 3 "" H 8050 5150 60  0000 C CNN
+	1    8050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5700 9500 5150
+Wire Wire Line
+	9500 5150 8300 5150
+$Comp
+L R R?
+U 1 1 54C7EE9A
+P 8100 6000
+F 0 "R?" V 8180 6000 50  0000 C CNN
+F 1 "15.8K" V 8107 6001 50  0000 C CNN
+F 2 "" V 8030 6000 30  0000 C CNN
+F 3 "" H 8100 6000 30  0000 C CNN
+	1    8100 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 54C7F0B3
+P 8100 5800
+F 0 "R?" V 8180 5800 50  0000 C CNN
+F 1 "49.9K" V 8107 5801 50  0000 C CNN
+F 2 "" V 8030 5800 30  0000 C CNN
+F 3 "" H 8100 5800 30  0000 C CNN
+	1    8100 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 5900 8350 5900
+Wire Wire Line
+	8350 5800 8350 6000
+Connection ~ 8350 5900
+Wire Wire Line
+	7800 5150 7800 5800
+Wire Wire Line
+	7800 5800 7850 5800
+$Comp
+L DIODESCH D?
+U 1 1 54C7FCA6
+P 8500 5350
+F 0 "D?" V 8500 5450 50  0000 C CNN
+F 1 "DIODESCH" H 8500 5250 50  0000 C CNN
+F 2 "" H 8500 5350 60  0000 C CNN
+F 3 "" H 8500 5350 60  0000 C CNN
+	1    8500 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54C809C1
+P 7400 6050
+F 0 "#PWR?" H 7400 5800 60  0001 C CNN
+F 1 "GND" H 7400 5900 60  0000 C CNN
+F 2 "" H 7400 6050 60  0000 C CNN
+F 3 "" H 7400 6050 60  0000 C CNN
+	1    7400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5150 7800 5150
+$Comp
+L C C?
+U 1 1 54C81C2A
+P 7400 5650
+F 0 "C?" H 7450 5750 50  0000 L CNN
+F 1 "10uF" H 7450 5550 50  0000 L CNN
+F 2 "" H 7438 5500 30  0000 C CNN
+F 3 "" H 7400 5650 60  0000 C CNN
+	1    7400 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5450 7400 5150
+Connection ~ 7400 5150
+Wire Wire Line
+	8800 5800 8650 5800
+Wire Wire Line
+	8650 5800 8650 5650
+Wire Wire Line
+	8650 5650 8500 5650
+Wire Wire Line
+	8500 5650 8500 5550
+$Comp
+L GND #PWR?
+U 1 1 54C83114
+P 8500 5650
+F 0 "#PWR?" H 8500 5400 60  0001 C CNN
+F 1 "GND" H 8500 5500 60  0000 C CNN
+F 2 "" H 8500 5650 60  0000 C CNN
+F 3 "" H 8500 5650 60  0000 C CNN
+	1    8500 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5850 7400 6050
+Wire Wire Line
+	7400 6000 7850 6000
+Connection ~ 7400 6000
+$Comp
+L C C?
+U 1 1 54C846DE
+P 9100 5350
+F 0 "C?" V 9200 5450 50  0000 L CNN
+F 1 "4.7uF" V 9200 5100 50  0000 L CNN
+F 2 "" H 9138 5200 30  0000 C CNN
+F 3 "" H 9100 5350 60  0000 C CNN
+	1    9100 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 5350 8750 5350
+Wire Wire Line
+	8750 5350 8750 5700
+Wire Wire Line
+	8750 5700 8800 5700
+Wire Wire Line
+	9300 5350 9500 5350
+Connection ~ 9500 5350
+Text HLabel 7150 5150 0    60   Output ~ 0
+REG6+3V3
 $EndSCHEMATC
