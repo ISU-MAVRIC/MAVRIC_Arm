@@ -1,4 +1,4 @@
-update=1/24/2015 8:07:41 PM
+update=1/27/2015 10:29:53 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -61,3 +59,6 @@ LibName29=contrib
 LibName30=valves
 LibName31=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/STMicroelectronics
 LibName32=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
+LibName33=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
+[general]
+version=1
