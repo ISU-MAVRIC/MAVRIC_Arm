@@ -1,10 +1,6 @@
-update=1/27/2015 9:04:44 PM
+update=1/27/2015 11:15:34 PM
 version=1
-last_client=eeschema
-[general]
-version=1
-RootSch=
-BoardNm=
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -36,3 +32,5 @@ LibName2=device
 LibName3=conn
 LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
 LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
+[general]
+version=1
