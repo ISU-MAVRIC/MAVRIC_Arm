@@ -4,7 +4,7 @@ LIBS:device
 LIBS:conn
 LIBS:Passives
 LIBS:MAVRIClib
-LIBS:$Arm Control Board-cache
+LIBS:Arm Control Board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
