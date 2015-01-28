@@ -304,23 +304,23 @@ $EndComp
 $Comp
 L 74LVCH244APW U?
 U 1 1 54C8472A
-P 5000 3900
-F 0 "U?" H 4600 2850 60  0000 C CNN
-F 1 "74LVCH244APW" H 4550 4050 60  0000 C CNN
-F 2 "" H 5000 3900 60  0000 C CNN
-F 3 "" H 5000 3900 60  0000 C CNN
-	1    5000 3900
+P 5000 3400
+F 0 "U?" H 4600 2350 60  0000 C CNN
+F 1 "74LVCH244APW" H 4550 3550 60  0000 C CNN
+F 2 "" H 5000 3400 60  0000 C CNN
+F 3 "" H 5000 3400 60  0000 C CNN
+	1    5000 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR011
 U 1 1 54C88705
-P 3900 5100
-F 0 "#PWR011" H 3900 4850 60  0001 C CNN
-F 1 "GND" H 3900 4950 60  0000 C CNN
-F 2 "" H 3900 5100 60  0000 C CNN
-F 3 "" H 3900 5100 60  0000 C CNN
-	1    3900 5100
+P 3900 4600
+F 0 "#PWR011" H 3900 4350 60  0001 C CNN
+F 1 "GND" H 3900 4450 60  0000 C CNN
+F 2 "" H 3900 4600 60  0000 C CNN
+F 3 "" H 3900 4600 60  0000 C CNN
+	1    3900 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -507,9 +507,9 @@ Text Label 9250 2150 2    60   ~ 0
 Reg6+3v3
 Text Label 7100 4100 2    60   ~ 0
 Reg6+3v3
-Text Label 5600 3900 0    60   ~ 0
+Text Label 5600 3400 0    60   ~ 0
 Reg6+3v3
-Text Label 5600 4100 0    60   ~ 0
+Text Label 5600 3600 0    60   ~ 0
 Servo1_PWM
 Text Label 1150 6900 0    60   ~ 0
 Servo1_PWM
@@ -523,15 +523,15 @@ Text Label 5500 6900 0    60   ~ 0
 Servo3_PWM
 Text Label 1350 5050 0    60   ~ 0
 TIM3_CH1_EE
-Text Label 4000 4000 2    60   ~ 0
+Text Label 4000 3500 2    60   ~ 0
 TIM3_CH1_EE
 Text Label 1350 5150 0    60   ~ 0
 TIM3_CH2_EE
-Text Label 4000 4200 2    60   ~ 0
+Text Label 4000 3700 2    60   ~ 0
 TIM3_CH2_EE
 Text Label 1350 5250 0    60   ~ 0
 TIM3_CH3_EE
-Text Label 4000 4400 2    60   ~ 0
+Text Label 4000 3900 2    60   ~ 0
 TIM3_CH3_EE
 Wire Wire Line
 	4450 1200 3850 1200
@@ -618,9 +618,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 1850 1200 1850
 Wire Wire Line
-	2350 1200 2950 1200
-Wire Wire Line
-	2950 1200 3100 1200
+	2350 1200 3100 1200
 Wire Wire Line
 	9250 5850 9100 5850
 Wire Wire Line
@@ -628,11 +626,9 @@ Wire Wire Line
 Wire Wire Line
 	10100 5750 10250 5750
 Wire Wire Line
-	2800 4800 3900 4800
+	2800 4300 4150 4300
 Wire Wire Line
-	3900 4800 4150 4800
-Wire Wire Line
-	3900 4800 3900 5100
+	3900 4300 3900 4600
 Wire Wire Line
 	10250 5850 10100 5850
 Wire Wire Line
@@ -642,29 +638,19 @@ Wire Wire Line
 Wire Wire Line
 	1200 5150 1350 5150
 Wire Wire Line
-	5150 4200 5000 4200
+	5150 3700 5000 3700
 Wire Wire Line
-	4000 4200 4150 4200
+	4000 3700 4150 3700
 Wire Wire Line
-	5150 4400 5000 4400
+	5150 3900 5000 3900
 Wire Wire Line
-	2800 3900 4150 3900
+	2800 3400 4150 3400
 Wire Wire Line
-	5000 4000 6250 4000
+	5000 3500 6250 3500
 Wire Wire Line
 	6650 1150 7100 1150
 Wire Wire Line
-	7100 1150 7100 1350
-Wire Wire Line
-	7100 1350 7100 1550
-Wire Wire Line
-	7100 1550 7100 1750
-Wire Wire Line
-	7100 1750 7100 1950
-Wire Wire Line
-	7100 1950 7100 2350
-Wire Wire Line
-	7100 2350 7100 2600
+	7100 1150 7100 2600
 Wire Wire Line
 	6650 1950 7100 1950
 Connection ~ 7100 1950
@@ -680,15 +666,7 @@ Connection ~ 7100 1350
 Wire Wire Line
 	6800 1250 6650 1250
 Wire Wire Line
-	6800 900  6800 1050
-Wire Wire Line
-	6800 1050 6800 1250
-Wire Wire Line
-	6800 1250 6800 1450
-Wire Wire Line
-	6800 1450 6800 1650
-Wire Wire Line
-	6800 1650 6800 1850
+	6800 900  6800 1850
 Wire Wire Line
 	6800 900  7000 900 
 Wire Wire Line
@@ -705,9 +683,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 4100 9050 4200
 Wire Wire Line
-	7250 4000 7250 4100
-Wire Wire Line
-	7250 4100 7250 4200
+	7250 4000 7250 4200
 Connection ~ 7250 4100
 Wire Wire Line
 	7550 4100 7550 4200
@@ -736,17 +712,13 @@ Wire Wire Line
 	6650 1050 6800 1050
 Connection ~ 6800 1050
 Wire Wire Line
-	9550 4000 9550 4100
-Wire Wire Line
-	9550 4100 9550 4200
+	9550 4000 9550 4200
 Connection ~ 9050 4100
 Connection ~ 9550 4100
 Wire Wire Line
 	9850 4100 9850 4200
 Wire Wire Line
-	9850 4600 9850 4700
-Wire Wire Line
-	9850 4700 9850 4800
+	9850 4600 9850 4800
 Wire Wire Line
 	9550 4700 9550 4600
 Connection ~ 9550 4700
@@ -769,35 +741,9 @@ Connection ~ 9850 4700
 Wire Wire Line
 	9550 4100 9850 4100
 Wire Wire Line
-	7250 4700 7550 4700
+	7250 4700 9850 4700
 Wire Wire Line
-	7550 4700 7850 4700
-Wire Wire Line
-	7850 4700 8150 4700
-Wire Wire Line
-	8150 4700 8450 4700
-Wire Wire Line
-	8450 4700 8750 4700
-Wire Wire Line
-	8750 4700 9050 4700
-Wire Wire Line
-	9050 4700 9550 4700
-Wire Wire Line
-	9550 4700 9850 4700
-Wire Wire Line
-	7100 4100 7250 4100
-Wire Wire Line
-	7250 4100 7550 4100
-Wire Wire Line
-	7550 4100 7850 4100
-Wire Wire Line
-	7850 4100 8150 4100
-Wire Wire Line
-	8150 4100 8450 4100
-Wire Wire Line
-	8450 4100 8750 4100
-Wire Wire Line
-	8750 4100 9050 4100
+	7100 4100 9050 4100
 Wire Wire Line
 	9400 1400 9250 1400
 Wire Wire Line
@@ -831,9 +777,9 @@ Wire Wire Line
 Wire Wire Line
 	9250 5750 9100 5750
 Wire Wire Line
-	5000 3900 5600 3900
+	5000 3400 5600 3400
 Wire Wire Line
-	5000 4100 5600 4100
+	5000 3600 5600 3600
 Wire Wire Line
 	1000 7050 1150 7050
 Wire Wire Line
@@ -857,9 +803,9 @@ Wire Wire Line
 Wire Wire Line
 	1200 5050 1350 5050
 Wire Wire Line
-	4150 4000 4000 4000
+	4150 3500 4000 3500
 Wire Wire Line
-	4150 4100 3550 4100
+	4150 3600 3550 3600
 Wire Wire Line
 	1200 5250 1350 5250
 Wire Wire Line
@@ -872,32 +818,32 @@ Wire Wire Line
 Text Label 1350 5350 0    60   ~ 0
 TIM3_CH4_EE
 Wire Wire Line
-	5000 4300 5600 4300
-Text Label 5600 4500 0    60   ~ 0
+	5000 3800 5600 3800
+Text Label 5600 4000 0    60   ~ 0
 Servo3_PWM
 Wire Wire Line
-	4150 4300 3550 4300
-Text Label 5600 4700 0    60   ~ 0
+	4150 3800 3550 3800
+Text Label 5600 4200 0    60   ~ 0
 Servo4_PWM
 Wire Wire Line
-	4150 4400 4000 4400
+	4150 3900 4000 3900
 Wire Wire Line
 	1200 3400 1350 3400
 Text Label 1350 3400 0    60   ~ 0
 TIM4_CH1_EE
-Text Label 5150 4200 0    60   ~ 0
+Text Label 5150 3700 0    60   ~ 0
 TIM4_CH1_EE
 Wire Wire Line
-	5000 4500 5600 4500
-Text Label 3550 4100 2    60   ~ 0
+	5000 4000 5600 4000
+Text Label 3550 3600 2    60   ~ 0
 Servo5_PWM
 Wire Wire Line
-	6250 4000 6250 5000
+	6250 3500 6250 4500
 Wire Wire Line
-	6250 5000 3900 5000
+	6250 4500 3900 4500
 Wire Wire Line
-	2800 3900 2800 4800
-Connection ~ 3900 4800
+	2800 3400 2800 4300
+Connection ~ 3900 4300
 Wire Wire Line
 	7950 5850 7950 5900
 $Comp
@@ -956,23 +902,23 @@ GPIO_PB8_Direction
 Text Label 1350 3700 0    60   ~ 0
 GPIO_PB9_Enable
 Wire Wire Line
-	5000 4600 5150 4600
-Text Label 4000 4600 2    60   ~ 0
+	5000 4100 5150 4100
+Text Label 4000 4100 2    60   ~ 0
 TIM3_CH4_EE
 Wire Wire Line
-	4150 4600 4000 4600
+	4150 4100 4000 4100
 Wire Wire Line
-	4150 4500 3550 4500
+	4150 4000 3550 4000
 Wire Wire Line
-	4150 4700 3550 4700
-Text Label 5600 4300 0    60   ~ 0
+	4150 4200 3550 4200
+Text Label 5600 3800 0    60   ~ 0
 Servo2_PWM
 Wire Wire Line
-	5000 4700 5600 4700
-Text Label 5150 4400 0    60   ~ 0
+	5000 4200 5600 4200
+Text Label 5150 3900 0    60   ~ 0
 TIM4_CH2_Step
 Wire Wire Line
-	5000 4800 5150 4800
+	5000 4300 5150 4300
 Wire Wire Line
 	7250 5900 7100 5900
 Wire Wire Line
@@ -985,15 +931,15 @@ Text Label 7100 6000 2    60   ~ 0
 Step_Step
 Text Label 7100 6100 2    60   ~ 0
 Step_Enable
-Text Label 3550 4300 2    60   ~ 0
+Text Label 3550 3800 2    60   ~ 0
 Step_Step
-Text Label 5150 4600 0    60   ~ 0
+Text Label 5150 4100 0    60   ~ 0
 GPIO_PB8_Direction
-Text Label 5150 4800 0    60   ~ 0
+Text Label 5150 4300 0    60   ~ 0
 GPIO_PB9_Enable
-Text Label 3550 4500 2    60   ~ 0
+Text Label 3550 4000 2    60   ~ 0
 Step_Direction
-Text Label 3550 4700 2    60   ~ 0
+Text Label 3550 4200 2    60   ~ 0
 Step_Enable
 $Comp
 L Actuator_Pot P?
@@ -1040,40 +986,40 @@ ADC1_IN9_Elbow
 $Comp
 L Actuator_Pot P?
 U 1 1 54CF04B5
-P 4050 6150
-F 0 "P?" H 4050 6350 50  0000 C CNN
-F 1 "Elbow Feedback" V 4150 6150 50  0000 C CNN
-F 2 "" H 4050 6150 60  0000 C CNN
-F 3 "" H 4050 6150 60  0000 C CNN
-	1    4050 6150
+P 3350 6150
+F 0 "P?" H 3350 6350 50  0000 C CNN
+F 1 "Elbow Feedback" V 3450 6150 50  0000 C CNN
+F 2 "" H 3350 6150 60  0000 C CNN
+F 3 "" H 3350 6150 60  0000 C CNN
+	1    3350 6150
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 54CF04BB
-P 4400 6350
-F 0 "#PWR?" H 4400 6100 60  0001 C CNN
-F 1 "GND" H 4400 6200 60  0000 C CNN
-F 2 "" H 4400 6350 60  0000 C CNN
-F 3 "" H 4400 6350 60  0000 C CNN
-	1    4400 6350
+P 3700 6350
+F 0 "#PWR?" H 3700 6100 60  0001 C CNN
+F 1 "GND" H 3700 6200 60  0000 C CNN
+F 2 "" H 3700 6350 60  0000 C CNN
+F 3 "" H 3700 6350 60  0000 C CNN
+	1    3700 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 6250 4400 6250
+	3550 6250 3700 6250
 Wire Wire Line
-	4400 6250 4400 6350
-Text Label 4400 6150 0    60   ~ 0
+	3700 6250 3700 6350
+Text Label 3700 6150 0    60   ~ 0
 Reg6+3v3
 Wire Wire Line
-	4250 6150 4400 6150
+	3550 6150 3700 6150
 Wire Wire Line
-	4250 6050 4400 6050
+	3550 6050 3700 6050
 Wire Wire Line
-	4400 6050 4400 5900
+	3700 6050 3700 5900
 Text Label 2250 5900 0    60   ~ 0
 ADC1_IN8_Shoulder
-Text Label 4400 5900 0    60   ~ 0
+Text Label 3700 5900 0    60   ~ 0
 ADC1_IN9_Elbow
 Wire Wire Line
 	1200 1450 1350 1450
@@ -1123,4 +1069,61 @@ Text Label 9250 3000 2    60   ~ 0
 GPIO_PC4_Reg5EN
 Text Label 9250 3150 2    60   ~ 0
 GPIO_PC5_Reg6EN
+Wire Wire Line
+	1200 2350 1350 2350
+Text Label 1350 2350 0    60   ~ 0
+SWDIO
+Wire Wire Line
+	1200 2450 1350 2450
+Text Label 1350 2450 0    60   ~ 0
+SWCLK
+Wire Wire Line
+	6650 2250 6800 2250
+Text Label 6800 2250 0    60   ~ 0
+NRST
+$Comp
+L ST_SWD_Connector P?
+U 1 1 54C88A7F
+P 5550 5850
+F 0 "P?" H 5550 6200 50  0000 C CNN
+F 1 "ST_SWD_Connector" V 5650 5850 50  0000 C CNN
+F 2 "" H 5550 5850 60  0000 C CNN
+F 3 "" H 5550 5850 60  0000 C CNN
+	1    5550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6000 5100 6000
+Text Label 5100 6000 2    60   ~ 0
+NRST
+Wire Wire Line
+	5250 5900 5100 5900
+Text Label 5100 5900 2    60   ~ 0
+SWDIO
+Wire Wire Line
+	5250 5700 5100 5700
+Text Label 5100 5700 2    60   ~ 0
+SWCLK
+Wire Wire Line
+	5250 5800 4700 5800
+Wire Wire Line
+	4700 5800 4700 5850
+$Comp
+L GND #PWR?
+U 1 1 54C90135
+P 4700 5850
+F 0 "#PWR?" H 4700 5600 60  0001 C CNN
+F 1 "GND" H 4700 5700 60  0000 C CNN
+F 2 "" H 4700 5850 60  0000 C CNN
+F 3 "" H 4700 5850 60  0000 C CNN
+	1    4700 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6100 5100 6100
+NoConn ~ 5100 6100
+Wire Wire Line
+	5250 5600 5100 5600
+Text Label 5100 5600 2    60   ~ 0
+VDD
 $EndSCHEMATC
