@@ -133,23 +133,56 @@ X P1 12V -200 50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# C
+# Capacitor
 #
-DEF C C 0 10 N Y 1 F N
-F0 "C" 50 100 50 H V L CNN
-F1 "C" 50 -100 50 H V L CNN
-F2 "" 38 -150 30 H V C CNN
-F3 "" 0 0 60 H V C CNN
+DEF Capacitor C 0 40 N N 1 F N
+F0 "C" -150 100 60 V V L CNN
+F1 "Capacitor" -50 100 60 V V L CNN
+F2 "" -100 0 60 H I C CNN
+F3 "" 0 100 60 H I C CNN
+F4 "Value" 0 0 60 H I C CNN "Manufacturer"
+F5 "Value" 0 0 60 H I C CNN "Manufacturer Part #"
+F6 "Value" 0 0 60 H I C CNN "Vendor"
+F7 "Value" 0 0 60 H I C CNN "Vendor Part #"
+F8 "10V" 50 100 50 V V L CNN "Voltage"
+F9 "X5R" 150 100 50 V V L CNN "Dielectric"
 $FPLIST
- SM*
- C?
- C1-1
+ CAPC*
+ CAPRD*
+ CAPRB*
+ CAPM*
 $ENDFPLIST
 DRAW
-P 2 0 1 20  -80 -30  80 -30 N
-P 2 0 1 20  -80 30  80 30 N
-X ~ 1 0 200 170 D 40 40 1 1 P
-X ~ 2 0 -200 170 U 40 40 1 1 P
+P 2 0 1 0  -25 -75  -25 75 N
+P 2 0 1 0  25 75  25 -75 N
+X ~ 1 -250 0 225 R 50 50 1 1 P
+X ~ 2 250 0 225 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Crystal
+#
+DEF Crystal X 0 40 N N 1 F N
+F0 "X" 0 150 60 H V C CNN
+F1 "Crystal" 0 -150 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+F4 "Value" 0 0 60 H I C CNN "Manufacturer"
+F5 "Value" 0 0 60 H I C CNN "Manufacturer Part #"
+F6 "Value" 0 0 60 H I C CNN "Vendor"
+F7 "Value" 0 0 60 H I C CNN "Vendor Part #"
+F8 "Value" 500 650 60 H I C CNN "Load Capacitance"
+F9 "Value" 600 750 60 H I C CNN "Stability"
+F10 "Value" 700 850 60 H I C CNN "Tolerance"
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -50 100 50 -100 0 1 0 N
+P 2 0 1 0  -100 100  -100 -100 N
+P 2 0 1 0  100 100  100 -100 N
+X ~ 1 -250 0 150 R 50 50 1 1 P
+X ~ 2 250 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -211,41 +244,31 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# INDUCTOR_SMALL
+# Inductor
 #
-DEF INDUCTOR_SMALL L 0 0 N N 1 F N
-F0 "L" 0 100 50 H V C CNN
-F1 "INDUCTOR_SMALL" 0 -50 50 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
-A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
-A 50 0 50 1 1799 0 1 0 N 100 0 0 0
-A 150 0 50 1 1799 0 1 0 N 200 0 100 0
-X 1 1 -250 0 50 R 30 30 1 1 I
-X 2 2 250 0 50 L 30 30 1 1 I
-ENDDRAW
-ENDDEF
-#
-# R
-#
-DEF R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "R" 7 1 50 V V C CNN
-F2 "" -70 0 30 V V C CNN
-F3 "" 0 0 30 H V C CNN
+DEF Inductor L 0 40 N N 1 F N
+F0 "L" -150 100 60 V V L CNN
+F1 "Inductor" -50 100 60 V V L CNN
+F2 "" -100 0 60 H I C CNN
+F3 "" 0 100 60 H I C CNN
+F4 "Value" 0 0 60 H I C CNN "Manufacturer"
+F5 "Value" 0 0 60 H I C CNN "Manufacturer Part #"
+F6 "Value" 0 0 60 H I C CNN "Vendor"
+F7 "Value" 0 0 60 H I C CNN "Vendor Part #"
+F8 "0.25A" 50 100 50 V V L CNN "Current"
+F9 "100mO" 150 100 50 V V L CNN "DCR"
 $FPLIST
- R?
- SM0603
- SM0805
- R?-*
- SM1206
+ INDC*
+ INDM*
+ INDAD*
+ INDRD*
 $ENDFPLIST
 DRAW
-S -40 150 40 -150 0 1 12 N
-X ~ 1 0 250 100 D 60 60 1 1 P
-X ~ 2 0 -250 100 U 60 60 1 1 P
+A -100 0 50 1 1799 0 1 0 N -50 0 -150 0
+A 0 0 50 1 1799 0 1 0 N 50 0 -50 0
+A 100 0 50 1 1799 0 1 0 N 150 0 50 0
+X ~ 1 -250 0 100 R 50 50 1 1 P
+X ~ 2 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -290,6 +313,30 @@ S -50 55 10 45 0 1 0 N
 S -50 100 50 -100 0 1 0 N
 X RX RX -200 50 150 R 50 50 1 1 P
 X TX TX -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Resistor
+#
+DEF Resistor R 0 40 N N 1 F N
+F0 "R" -150 100 60 V V L CNN
+F1 "Resistor" -50 100 60 V V L CNN
+F2 "" -100 0 60 H I C CNN
+F3 "" 0 100 60 H I C CNN
+F4 "Value" 0 0 60 H I C CNN "Manufacturer"
+F5 "Value" 0 0 60 H I C CNN "Manufacturer Part #"
+F6 "Value" 0 0 60 H I C CNN "Vendor"
+F7 "Value" 0 0 60 H I C CNN "Vendor Part #"
+F8 "1/10W" 50 100 50 V V L CNN "Power"
+F9 "5%" 150 100 50 V V L CNN "Tolerance"
+$FPLIST
+ RESC*
+ RESAD*
+$ENDFPLIST
+DRAW
+S -150 50 150 -50 0 1 0 N
+X ~ 1 -250 0 100 R 50 50 1 1 P
+X ~ 2 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

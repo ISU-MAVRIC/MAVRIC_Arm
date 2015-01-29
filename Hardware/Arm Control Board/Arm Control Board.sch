@@ -9,7 +9,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Arm Control Board Voltage Regulators"
 Date "Sunday, January 25, 2015"
 Rev ""
@@ -74,24 +74,6 @@ F 3 "" H 7950 5900 60  0000 C CNN
 	1    7950 5900
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 9400 1300 1650 1950
-U 54C63434
-F0 "Power" 60
-F1 "Power.sch" 60
-F2 "REG1+5V" O L 9400 1400 60 
-F3 "REG2+5V" O L 9400 1500 60 
-F4 "REG3+5V" O L 9400 1600 60 
-F5 "REG4+5V" O L 9400 1700 60 
-F6 "REG5+5V" O L 9400 1800 60 
-F7 "REG1EN" I L 9400 2400 60 
-F8 "REG2EN" I L 9400 2550 60 
-F9 "REG3EN" I L 9400 2700 60 
-F10 "REG4EN" I L 9400 2850 60 
-F11 "REG5EN" I L 9400 3000 60 
-F12 "REG6+3V3" O L 9400 2150 60 
-F13 "REG6EN" I L 9400 3150 60 
-$EndSheet
 $Comp
 L SERVO P?
 U 1 1 54C887CD
@@ -139,12 +121,12 @@ $EndComp
 $Comp
 L SERVO P?
 U 1 1 54C88AD6
-P 5150 7150
-F 0 "P?" H 5150 7350 50  0000 C CNN
-F 1 "Servo 5" V 5250 7150 50  0000 C CNN
-F 2 "" H 5150 7150 60  0000 C CNN
-F 3 "" H 5150 7150 60  0000 C CNN
-	1    5150 7150
+P 5700 7150
+F 0 "P?" H 5700 7350 50  0000 C CNN
+F 1 "Servo 5" V 5800 7150 50  0000 C CNN
+F 2 "" H 5700 7150 60  0000 C CNN
+F 3 "" H 5700 7150 60  0000 C CNN
+	1    5700 7150
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -194,12 +176,12 @@ $EndComp
 $Comp
 L GND #PWR08
 U 1 1 54C8955C
-P 5500 7350
-F 0 "#PWR08" H 5500 7100 60  0001 C CNN
-F 1 "GND" H 5500 7200 60  0000 C CNN
-F 2 "" H 5500 7350 60  0000 C CNN
-F 3 "" H 5500 7350 60  0000 C CNN
-	1    5500 7350
+P 6050 7350
+F 0 "#PWR08" H 6050 7100 60  0001 C CNN
+F 1 "GND" H 6050 7200 60  0000 C CNN
+F 2 "" H 6050 7350 60  0000 C CNN
+F 3 "" H 6050 7350 60  0000 C CNN
+	1    6050 7350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -293,12 +275,12 @@ $EndComp
 $Comp
 L STM32F401RCT6 U?
 U 4 1 54CA465F
-P 6450 950
-F 0 "U?" H 6300 1050 60  0000 C CNN
-F 1 "STM32F401RCT6" V 6100 600 60  0000 C CNN
-F 2 "" H 6450 -650 60  0000 C CNN
-F 3 "" H 6450 -650 60  0000 C CNN
-	4    6450 950 
+P 5600 750
+F 0 "U?" H 5450 850 60  0000 C CNN
+F 1 "STM32F401RCT6" V 5250 400 60  0000 C CNN
+F 2 "" H 5600 -850 60  0000 C CNN
+F 3 "" H 5600 -850 60  0000 C CNN
+	4    5600 750 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -326,168 +308,67 @@ $EndComp
 $Comp
 L GND #PWR012
 U 1 1 54CA71B9
-P 7100 2600
-F 0 "#PWR012" H 7100 2350 60  0001 C CNN
-F 1 "GND" H 7100 2450 60  0000 C CNN
-F 2 "" H 7100 2600 60  0000 C CNN
-F 3 "" H 7100 2600 60  0000 C CNN
-	1    7100 2600
+P 6350 2200
+F 0 "#PWR012" H 6350 1950 60  0001 C CNN
+F 1 "GND" H 6350 2050 60  0000 C CNN
+F 2 "" H 6350 2200 60  0000 C CNN
+F 3 "" H 6350 2200 60  0000 C CNN
+	1    6350 2200
 	1    0    0    -1  
 $EndComp
-Text Label 7000 900  0    60   ~ 0
+Text Label 6150 700  0    60   ~ 0
 VDD
-$Comp
-L C C?
-U 1 1 54CA8C27
-P 7250 4400
-F 0 "C?" H 7300 4500 50  0000 L CNN
-F 1 "100nF" H 7300 4300 50  0000 L CNN
-F 2 "" H 7288 4250 30  0000 C CNN
-F 3 "" H 7250 4400 60  0000 C CNN
-	1    7250 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 54CA8D66
-P 7550 4400
-F 0 "C?" H 7600 4500 50  0000 L CNN
-F 1 "100nF" H 7600 4300 50  0000 L CNN
-F 2 "" H 7588 4250 30  0000 C CNN
-F 3 "" H 7550 4400 60  0000 C CNN
-	1    7550 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 54CA8D93
-P 7850 4400
-F 0 "C?" H 7900 4500 50  0000 L CNN
-F 1 "100nF" H 7900 4300 50  0000 L CNN
-F 2 "" H 7888 4250 30  0000 C CNN
-F 3 "" H 7850 4400 60  0000 C CNN
-	1    7850 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 54CA8DC5
-P 8450 4400
-F 0 "C?" H 8500 4500 50  0000 L CNN
-F 1 "100nF" H 8500 4300 50  0000 L CNN
-F 2 "" H 8488 4250 30  0000 C CNN
-F 3 "" H 8450 4400 60  0000 C CNN
-	1    8450 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 54CA8E07
-P 8750 4400
-F 0 "C?" H 8800 4500 50  0000 L CNN
-F 1 "100nF" H 8800 4300 50  0000 L CNN
-F 2 "" H 8788 4250 30  0000 C CNN
-F 3 "" H 8750 4400 60  0000 C CNN
-	1    8750 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 54CA8E37
-P 9050 4400
-F 0 "C?" H 9100 4500 50  0000 L CNN
-F 1 "100nF" H 9100 4300 50  0000 L CNN
-F 2 "" H 9088 4250 30  0000 C CNN
-F 3 "" H 9050 4400 60  0000 C CNN
-	1    9050 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 54CA9993
-P 8150 4400
-F 0 "C?" H 8200 4500 50  0000 L CNN
-F 1 "4.7uF" H 8200 4300 50  0000 L CNN
-F 2 "" H 8188 4250 30  0000 C CNN
-F 3 "" H 8150 4400 60  0000 C CNN
-	1    8150 4400
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR013
 U 1 1 54CAB654
-P 9850 4800
-F 0 "#PWR013" H 9850 4550 60  0001 C CNN
-F 1 "GND" H 9850 4650 60  0000 C CNN
-F 2 "" H 9850 4800 60  0000 C CNN
-F 3 "" H 9850 4800 60  0000 C CNN
-	1    9850 4800
+P 10550 4900
+F 0 "#PWR013" H 10550 4650 60  0001 C CNN
+F 1 "GND" H 10550 4750 60  0000 C CNN
+F 2 "" H 10550 4900 60  0000 C CNN
+F 3 "" H 10550 4900 60  0000 C CNN
+	1    10550 4900
 	1    0    0    -1  
 $EndComp
 Text Label 7250 3950 0    60   ~ 0
 VDD
-Text Label 6800 2450 0    60   ~ 0
+Text Label 5950 2250 0    60   ~ 0
 VDDA
-$Comp
-L C C?
-U 1 1 54CB7119
-P 9550 4400
-F 0 "C?" H 9600 4500 50  0000 L CNN
-F 1 "100nF" H 9600 4300 50  0000 L CNN
-F 2 "" H 9588 4250 30  0000 C CNN
-F 3 "" H 9550 4400 60  0000 C CNN
-	1    9550 4400
-	1    0    0    -1  
-$EndComp
-Text Label 9550 4000 0    60   ~ 0
+Text Label 10150 4000 0    60   ~ 0
 VDDA
-$Comp
-L C C?
-U 1 1 54CBF5F9
-P 9850 4400
-F 0 "C?" H 9900 4500 50  0000 L CNN
-F 1 "1uF" H 9900 4300 50  0000 L CNN
-F 2 "" H 9888 4250 30  0000 C CNN
-F 3 "" H 9850 4400 60  0000 C CNN
-	1    9850 4400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Ferrite FB?
 U 1 1 54C85E3A
-P 9300 4100
-F 0 "FB?" V 9150 4200 60  0000 L CNN
-F 1 "Ferrite" V 9250 4200 60  0000 L CNN
-F 2 "" H 9200 4100 60  0001 C CNN
-F 3 "" H 9300 4200 60  0001 C CNN
-F 4 "Value" H 9300 4100 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 9300 4100 60  0001 C CNN "Manufacturer Part #"
-F 6 "Value" H 9300 4100 60  0001 C CNN "Vendor"
-F 7 "Value" H 9300 4100 60  0001 C CNN "Vendor Part #"
-F 8 "0.25A" V 9350 4200 50  0000 L CNN "Current"
-F 9 "100mO" V 9450 4200 50  0000 L CNN "DCR"
-	1    9300 4100
+P 9900 4100
+F 0 "FB?" V 9750 4200 60  0000 L CNN
+F 1 "50O" V 9850 4200 60  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9800 4100 60  0001 C CNN
+F 3 "" H 9900 4200 60  0001 C CNN
+F 4 "Laird-Signal" H 9900 4100 60  0001 C CNN "Manufacturer"
+F 5 "HI1206T500R-10" H 9900 4100 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 9900 4100 60  0001 C CNN "Vendor"
+F 7 "240-2412-1-ND" H 9900 4100 60  0001 C CNN "Vendor Part #"
+F 8 "6A" V 9950 4200 50  0000 L CNN "Current"
+F 9 "10mO" V 10050 4200 50  0000 L CNN "DCR"
+	1    9900 4100
 	1    0    0    -1  
 $EndComp
 Text Label 1150 7150 0    60   ~ 0
-Reg1+5v
-Text Label 9250 1400 2    60   ~ 0
-Reg1+5v
-Text Label 9250 1500 2    60   ~ 0
-Reg2+5v
-Text Label 9250 1600 2    60   ~ 0
-Reg3+5v
-Text Label 9250 1700 2    60   ~ 0
-Reg4+5v
+Reg1+7v4
+Text Label 9300 750  2    60   ~ 0
+Reg1+7v4
+Text Label 9300 850  2    60   ~ 0
+Reg2+7v4
+Text Label 9300 950  2    60   ~ 0
+Reg3+7v4
+Text Label 9300 1050 2    60   ~ 0
+Reg4+7v4
 Text Label 2250 7150 0    60   ~ 0
-Reg2+5v
+Reg2+7v4
 Text Label 3350 7150 0    60   ~ 0
-Reg3+5v
+Reg3+7v4
 Text Label 4400 7150 0    60   ~ 0
-Reg4+5v
-Text Label 9250 1800 2    60   ~ 0
-Reg5+5v
-Text Label 5500 7150 0    60   ~ 0
+Reg4+7v4
+Text Label 9300 2150 2    60   ~ 0
 Reg5+5v
 Text Label 10100 5750 2    60   ~ 0
 Reg5+5v
@@ -503,9 +384,9 @@ Text Label 1350 1250 0    60   ~ 0
 USART2_TX
 Text Label 9100 5750 2    60   ~ 0
 USART2_TX
-Text Label 9250 2150 2    60   ~ 0
+Text Label 9300 2250 2    60   ~ 0
 Reg6+3v3
-Text Label 7100 4100 2    60   ~ 0
+Text Label 7100 3950 2    60   ~ 0
 Reg6+3v3
 Text Label 5600 3400 0    60   ~ 0
 Reg6+3v3
@@ -518,9 +399,9 @@ Servo2_PWM
 Text Label 3350 6900 0    60   ~ 0
 Servo3_PWM
 Text Label 4400 6900 0    60   ~ 0
-Servo3_PWM
-Text Label 5500 6900 0    60   ~ 0
-Servo3_PWM
+Servo4_PWM
+Text Label 6050 6900 0    60   ~ 0
+Servo5_PWM
 Text Label 1350 5050 0    60   ~ 0
 TIM3_CH1_EE
 Text Label 4000 3500 2    60   ~ 0
@@ -560,9 +441,9 @@ Wire Wire Line
 Wire Wire Line
 	4400 7250 4400 7350
 Wire Wire Line
-	5350 7250 5500 7250
+	5900 7250 6050 7250
 Wire Wire Line
-	5500 7250 5500 7350
+	6050 7250 6050 7350
 Wire Wire Line
 	4400 7250 4250 7250
 Wire Notes Line
@@ -618,9 +499,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 1850 1200 1850
 Wire Wire Line
-	2350 1200 2950 1200
-Wire Wire Line
-	2950 1200 3100 1200
+	2350 1200 3100 1200
 Wire Wire Line
 	9250 5850 9100 5850
 Wire Wire Line
@@ -632,7 +511,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 5850 10100 5900
 Wire Wire Line
-	9400 2150 9250 2150
+	9450 2250 9300 2250
 Wire Wire Line
 	1200 5150 1350 5150
 Wire Wire Line
@@ -646,162 +525,112 @@ Wire Wire Line
 Wire Wire Line
 	5000 3500 6300 3500
 Wire Wire Line
-	6650 1150 7100 1150
+	5800 950  6350 950 
 Wire Wire Line
-	7100 1150 7100 1350
+	6350 950  6350 2200
 Wire Wire Line
-	7100 1350 7100 1550
+	5800 1750 6350 1750
+Connection ~ 6350 1750
 Wire Wire Line
-	7100 1550 7100 1750
+	5800 1550 6350 1550
+Connection ~ 6350 1550
 Wire Wire Line
-	7100 1750 7100 1950
+	5800 1350 6350 1350
+Connection ~ 6350 1350
 Wire Wire Line
-	7100 1950 7100 2350
+	5800 1150 6350 1150
+Connection ~ 6350 1150
 Wire Wire Line
-	7100 2350 7100 2600
+	5950 1050 5800 1050
 Wire Wire Line
-	6650 1950 7100 1950
-Connection ~ 7100 1950
+	5950 700  5950 1650
 Wire Wire Line
-	6650 1750 7100 1750
-Connection ~ 7100 1750
+	5950 700  6150 700 
 Wire Wire Line
-	6650 1550 7100 1550
-Connection ~ 7100 1550
+	5950 1650 5800 1650
+Connection ~ 5950 1050
 Wire Wire Line
-	6650 1350 7100 1350
-Connection ~ 7100 1350
+	5800 1450 5950 1450
+Connection ~ 5950 1450
 Wire Wire Line
-	6800 1250 6650 1250
+	5800 1250 5950 1250
+Connection ~ 5950 1250
 Wire Wire Line
-	6800 900  6800 1050
+	7250 4700 7250 4800
 Wire Wire Line
-	6800 1050 6800 1250
+	9650 4100 9650 4200
 Wire Wire Line
-	6800 1250 6800 1450
-Wire Wire Line
-	6800 1450 6800 1650
-Wire Wire Line
-	6800 1650 6800 1850
-Wire Wire Line
-	6800 900  7000 900 
-Wire Wire Line
-	6800 1850 6650 1850
-Connection ~ 6800 1250
-Wire Wire Line
-	6650 1650 6800 1650
-Connection ~ 6800 1650
-Wire Wire Line
-	6650 1450 6800 1450
-Connection ~ 6800 1450
-Wire Wire Line
-	7250 4600 7250 4700
-Wire Wire Line
-	9050 4100 9050 4200
-Wire Wire Line
-	7250 3950 7250 4100
-Wire Wire Line
-	7250 4100 7250 4200
+	7250 3950 7250 4200
 Connection ~ 7250 4100
 Wire Wire Line
-	7550 4100 7550 4200
-Connection ~ 7550 4100
+	7650 4100 7650 4200
+Connection ~ 7650 4100
 Wire Wire Line
-	7850 4100 7850 4200
-Connection ~ 7850 4100
-Wire Wire Line
-	8150 4100 8150 4200
-Connection ~ 8150 4100
+	8050 4100 8050 4200
+Connection ~ 8050 4100
 Wire Wire Line
 	8450 4100 8450 4200
 Connection ~ 8450 4100
 Wire Wire Line
-	8750 4100 8750 4200
-Connection ~ 8750 4100
+	8850 4100 8850 4200
+Connection ~ 8850 4100
 Wire Wire Line
-	6650 2350 7100 2350
-Connection ~ 7100 2350
+	9250 4100 9250 4200
+Connection ~ 9250 4100
 Wire Wire Line
-	9050 4700 9050 4600
-Connection ~ 9050 4700
+	5800 2150 6350 2150
+Connection ~ 6350 2150
 Wire Wire Line
-	6650 2450 6800 2450
+	9650 4800 9650 4700
+Connection ~ 9650 4800
 Wire Wire Line
-	6650 1050 6800 1050
-Connection ~ 6800 1050
+	5800 2250 5950 2250
 Wire Wire Line
-	9550 4000 9550 4100
+	5800 850  5950 850 
+Connection ~ 5950 850 
 Wire Wire Line
-	9550 4100 9550 4200
-Connection ~ 9050 4100
-Connection ~ 9550 4100
+	10150 4000 10150 4200
+Connection ~ 9650 4100
+Connection ~ 10150 4100
 Wire Wire Line
-	9850 4100 9850 4200
+	10550 4100 10550 4200
 Wire Wire Line
-	9850 4600 9850 4700
+	10550 4700 10550 4900
 Wire Wire Line
-	9850 4700 9850 4800
+	10150 4800 10150 4700
+Connection ~ 10150 4800
 Wire Wire Line
-	9550 4700 9550 4600
-Connection ~ 9550 4700
+	7650 4700 7650 4800
+Connection ~ 7650 4800
 Wire Wire Line
-	7550 4600 7550 4700
-Connection ~ 7550 4700
+	8050 4800 8050 4700
+Connection ~ 8050 4800
 Wire Wire Line
-	7850 4700 7850 4600
-Connection ~ 7850 4700
+	8450 4800 8450 4700
+Connection ~ 8450 4800
 Wire Wire Line
-	8150 4700 8150 4600
-Connection ~ 8150 4700
+	8850 4800 8850 4700
+Connection ~ 8850 4800
 Wire Wire Line
-	8450 4700 8450 4600
-Connection ~ 8450 4700
+	9250 4800 9250 4700
+Connection ~ 9250 4800
+Connection ~ 10550 4800
 Wire Wire Line
-	8750 4700 8750 4600
-Connection ~ 8750 4700
-Connection ~ 9850 4700
+	10150 4100 10550 4100
 Wire Wire Line
-	9550 4100 9850 4100
+	7250 4800 10550 4800
 Wire Wire Line
-	7250 4700 7550 4700
+	7100 4100 9650 4100
 Wire Wire Line
-	7550 4700 7850 4700
-Wire Wire Line
-	7850 4700 8150 4700
-Wire Wire Line
-	8150 4700 8450 4700
-Wire Wire Line
-	8450 4700 8750 4700
-Wire Wire Line
-	8750 4700 9050 4700
-Wire Wire Line
-	9050 4700 9550 4700
-Wire Wire Line
-	9550 4700 9850 4700
-Wire Wire Line
-	7100 4100 7250 4100
-Wire Wire Line
-	7250 4100 7550 4100
-Wire Wire Line
-	7550 4100 7850 4100
-Wire Wire Line
-	7850 4100 8150 4100
-Wire Wire Line
-	8150 4100 8450 4100
-Wire Wire Line
-	8450 4100 8750 4100
-Wire Wire Line
-	8750 4100 9050 4100
-Wire Wire Line
-	9400 1400 9250 1400
+	9450 750  9300 750 
 Wire Wire Line
 	1000 7150 1150 7150
 Wire Wire Line
-	9250 1500 9400 1500
+	9300 850  9450 850 
 Wire Wire Line
-	9250 1600 9400 1600
+	9300 950  9450 950 
 Wire Wire Line
-	9250 1700 9400 1700
+	9300 1050 9450 1050
 Wire Wire Line
 	2100 7150 2250 7150
 Wire Wire Line
@@ -809,9 +638,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 7150 4400 7150
 Wire Wire Line
-	9400 1800 9250 1800
+	9450 2150 9300 2150
 Wire Wire Line
-	5350 7150 5500 7150
+	5900 7150 6050 7150
 Wire Wire Line
 	1200 1950 1350 1950
 Wire Wire Line
@@ -845,9 +674,9 @@ Wire Wire Line
 Wire Wire Line
 	4400 7050 4400 6900
 Wire Wire Line
-	5350 7050 5500 7050
+	5900 7050 6050 7050
 Wire Wire Line
-	5500 7050 5500 6900
+	6050 7050 6050 6900
 Wire Wire Line
 	1200 5050 1350 5050
 Wire Wire Line
@@ -928,8 +757,6 @@ Wire Wire Line
 	6250 5700 6250 5750
 Wire Wire Line
 	7250 5800 7100 5800
-Text Label 7100 5800 2    60   ~ 0
-Reg6+3v3
 Wire Wire Line
 	1200 3500 1350 3500
 Text Label 1350 3500 0    60   ~ 0
@@ -1087,29 +914,21 @@ Wire Wire Line
 Text Label 1350 4950 0    60   ~ 0
 GPIO_PC5_Reg6EN
 Wire Wire Line
-	9400 2400 9250 2400
-Text Label 9250 2400 2    60   ~ 0
+	9450 1250 9300 1250
+Text Label 9300 1250 2    60   ~ 0
 GPIO_PA4_Reg1EN
 Wire Wire Line
-	9400 2550 9250 2550
+	9450 1350 9300 1350
 Wire Wire Line
-	9400 2700 9250 2700
+	9450 1450 9300 1450
 Wire Wire Line
-	9400 2850 9250 2850
-Text Label 9250 2550 2    60   ~ 0
+	9450 1550 9300 1550
+Text Label 9300 1350 2    60   ~ 0
 GPIO_PA5_Reg2EN
-Text Label 9250 2700 2    60   ~ 0
+Text Label 9300 1450 2    60   ~ 0
 GPIO_PA6_Reg3EN
-Text Label 9250 2850 2    60   ~ 0
+Text Label 9300 1550 2    60   ~ 0
 GPIO_PA7_Reg4EN
-Wire Wire Line
-	9400 3000 9250 3000
-Wire Wire Line
-	9400 3150 9250 3150
-Text Label 9250 3000 2    60   ~ 0
-GPIO_PC4_Reg5EN
-Text Label 9250 3150 2    60   ~ 0
-GPIO_PC5_Reg6EN
 Wire Wire Line
 	1200 2350 1350 2350
 Text Label 1350 2350 0    60   ~ 0
@@ -1119,8 +938,8 @@ Wire Wire Line
 Text Label 1350 2450 0    60   ~ 0
 SWCLK
 Wire Wire Line
-	6650 2250 6800 2250
-Text Label 6800 2250 0    60   ~ 0
+	5800 2050 5950 2050
+Text Label 5950 2050 0    60   ~ 0
 NRST
 $Comp
 L ST_SWD_Connector P?
@@ -1197,4 +1016,331 @@ Wire Wire Line
 	4000 4350 4000 4300
 Wire Wire Line
 	4000 4300 4150 4300
+$Sheet
+S 9450 2050 800  800 
+U 54CCF49F
+F0 "Low Voltage Regulators" 60
+F1 "Low Voltage Regulators.sch" 60
+F2 "REG6EN" I L 9450 2550 60 
+F3 "REG6+3V3" O L 9450 2250 60 
+F4 "REG5EN" I L 9450 2450 60 
+F5 "REG5+5V" O L 9450 2150 60 
+$EndSheet
+$Sheet
+S 9450 650  800  1050
+U 54C63434
+F0 "7.4V Regulators" 60
+F1 "7V4 Regulators.sch" 60
+F2 "REG1+7V4" O L 9450 750 60 
+F3 "REG2+7V4" O L 9450 850 60 
+F4 "REG3+7V4" O L 9450 950 60 
+F5 "REG4+7V4" O L 9450 1050 60 
+F6 "REG1EN" I L 9450 1250 60 
+F7 "REG2EN" I L 9450 1350 60 
+F8 "REG3EN" I L 9450 1450 60 
+F9 "REG4EN" I L 9450 1550 60 
+$EndSheet
+Wire Wire Line
+	9450 2450 9300 2450
+Text Label 9300 2450 2    60   ~ 0
+GPIO_PC4_Reg5EN
+Wire Wire Line
+	9450 2550 9300 2550
+Text Label 9300 2550 2    60   ~ 0
+GPIO_PC5_Reg6EN
+Text Label 6050 7150 0    60   ~ 0
+Reg5+5v
+Text Label 7100 5800 2    60   ~ 0
+Reg5+5v
+$Comp
+L Capacitor C?
+U 1 1 54CFCDE7
+P 7250 4450
+F 0 "C?" V 7100 4550 60  0000 L CNN
+F 1 ".1uF" V 7200 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7150 4450 60  0001 C CNN
+F 3 "" H 7250 4550 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7250 4450 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 7250 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 7250 4450 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 7250 4450 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 7300 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 7400 4550 50  0000 L CNN "Dielectric"
+	1    7250 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54CFCE2D
+P 7650 4450
+F 0 "C?" V 7500 4550 60  0000 L CNN
+F 1 ".1uF" V 7600 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7550 4450 60  0001 C CNN
+F 3 "" H 7650 4550 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7650 4450 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 7650 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 7650 4450 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 7650 4450 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 7700 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 7800 4550 50  0000 L CNN "Dielectric"
+	1    7650 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54CFCE7E
+P 8050 4450
+F 0 "C?" V 7900 4550 60  0000 L CNN
+F 1 ".1uF" V 8000 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7950 4450 60  0001 C CNN
+F 3 "" H 8050 4550 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 8050 4450 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 8050 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 8050 4450 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 8050 4450 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 8100 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 8200 4550 50  0000 L CNN "Dielectric"
+	1    8050 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54CFD626
+P 8850 4450
+F 0 "C?" V 8700 4550 60  0000 L CNN
+F 1 ".1uF" V 8800 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8750 4450 60  0001 C CNN
+F 3 "" H 8850 4550 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 8850 4450 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 8850 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 8850 4450 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 8850 4450 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 8900 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 9000 4550 50  0000 L CNN "Dielectric"
+	1    8850 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54CFD67C
+P 9250 4450
+F 0 "C?" V 9100 4550 60  0000 L CNN
+F 1 ".1uF" V 9200 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9150 4450 60  0001 C CNN
+F 3 "" H 9250 4550 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 9250 4450 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 9250 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 9250 4450 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 9250 4450 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 9300 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 9400 4550 50  0000 L CNN "Dielectric"
+	1    9250 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54CFD6F9
+P 9650 4450
+F 0 "C?" V 9500 4550 60  0000 L CNN
+F 1 ".1uF" V 9600 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9550 4450 60  0001 C CNN
+F 3 "" H 9650 4550 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 9650 4450 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 9650 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 9650 4450 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 9650 4450 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 9700 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 9800 4550 50  0000 L CNN "Dielectric"
+	1    9650 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54CFDBEE
+P 10150 4450
+F 0 "C?" V 10000 4550 60  0000 L CNN
+F 1 ".1uF" V 10100 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 10050 4450 60  0001 C CNN
+F 3 "" H 10150 4550 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 10150 4450 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 10150 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 10150 4450 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 10150 4450 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 10200 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 10300 4550 50  0000 L CNN "Dielectric"
+	1    10150 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54CFFED0
+P 8450 4450
+F 0 "C?" V 8300 4550 60  0000 L CNN
+F 1 "4.7uF" V 8400 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8350 4450 60  0001 C CNN
+F 3 "" H 8450 4550 60  0001 C CNN
+F 4 "Taiyo Yuden" H 8450 4450 60  0001 C CNN "Manufacturer"
+F 5 "GMK316F475ZG-T" H 8450 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 8450 4450 60  0001 C CNN "Vendor"
+F 7 "587-2254-1-ND" H 8450 4450 60  0001 C CNN "Vendor Part #"
+F 8 "35V" V 8500 4550 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 8600 4550 50  0000 L CNN "Dielectric"
+	1    8450 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54D0178D
+P 10550 4450
+F 0 "C?" V 10400 4550 60  0000 L CNN
+F 1 "1uF" V 10500 4550 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 10450 4450 60  0001 C CNN
+F 3 "" H 10550 4550 60  0001 C CNN
+F 4 "Kemet" H 10550 4450 60  0001 C CNN "Manufacturer"
+F 5 "C1206C105M3RACTU" H 10550 4450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 10550 4450 60  0001 C CNN "Vendor"
+F 7 "399-8148-1-ND" H 10550 4450 60  0001 C CNN "Vendor Part #"
+F 8 "25V" V 10600 4550 50  0000 L CNN "Voltage"
+F 9 "X7R" V 10700 4550 50  0000 L CNN "Dielectric"
+	1    10550 4450
+	0    1    1    0   
+$EndComp
+Text Notes 5650 6750 0    60   ~ 0
+5V for smaller \ncamera servo
+Wire Wire Line
+	4050 1100 4050 950 
+Wire Wire Line
+	4050 1100 3850 1100
+Text Label 4050 950  0    60   ~ 0
+Reg5+5v
+Wire Wire Line
+	5800 2350 6000 2350
+Wire Wire Line
+	6000 2350 6000 2400
+$Comp
+L Capacitor C?
+U 1 1 54D0C267
+P 6000 2650
+F 0 "C?" V 5850 2750 60  0000 L CNN
+F 1 "4.7uF" V 5950 2750 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5900 2650 60  0001 C CNN
+F 3 "" H 6000 2750 60  0001 C CNN
+F 4 "Taiyo Yuden" H 6000 2650 60  0001 C CNN "Manufacturer"
+F 5 "GMK316F475ZG-T" H 6000 2650 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 6000 2650 60  0001 C CNN "Vendor"
+F 7 "587-2254-1-ND" H 6000 2650 60  0001 C CNN "Vendor Part #"
+F 8 "35V" V 6050 2750 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 6150 2750 50  0000 L CNN "Dielectric"
+	1    6000 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 2900 6000 2900
+$Comp
+L GND #PWR?
+U 1 1 54D0EC2B
+P 6000 2900
+F 0 "#PWR?" H 6000 2650 60  0001 C CNN
+F 1 "GND" H 6000 2750 60  0000 C CNN
+F 2 "" H 6000 2900 60  0000 C CNN
+F 3 "" H 6000 2900 60  0000 C CNN
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1850 5950 1850
+Wire Wire Line
+	5800 1950 5950 1950
+Text Label 5950 1850 0    60   ~ 0
+OSC_IN
+Text Label 5950 1950 0    60   ~ 0
+OSC_OUT
+$Comp
+L Crystal X?
+U 1 1 54D16461
+P 7450 2400
+F 0 "X?" H 7450 2550 60  0000 C CNN
+F 1 "24MHz" H 7450 2250 60  0000 C CNN
+F 2 "Crystals_Oscillators_SMD:Q_49U3HMS" H 7450 2400 60  0001 C CNN
+F 3 "" H 7450 2400 60  0000 C CNN
+F 4 "TXC" H 7450 2400 60  0001 C CNN "Manufacturer"
+F 5 "9C-24.000MAAE-T" H 7450 2400 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 7450 2400 60  0001 C CNN "Digi-Key"
+F 7 "887-2439-1-ND" H 7450 2400 60  0001 C CNN "Vendor Part #"
+F 8 "12pF" H 7950 3050 60  0001 C CNN "Load Capacitance"
+F 9 "30ppm" H 8050 3150 60  0001 C CNN "Stability"
+F 10 "30ppm" H 8150 3250 60  0001 C CNN "Tolerance"
+	1    7450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54D16C17
+P 7850 2800
+F 0 "C?" V 7700 2900 60  0000 L CNN
+F 1 "15pF" V 7800 2900 60  0000 L CNN
+F 2 "" H 7750 2800 60  0001 C CNN
+F 3 "" H 7850 2900 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7850 2800 60  0001 C CNN "Manufacturer"
+F 5 "CL31C150JBCNNNC" H 7850 2800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 7850 2800 60  0001 C CNN "Vendor"
+F 7 "1276-2809-1-ND" H 7850 2800 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 7900 2900 50  0000 L CNN "Voltage"
+F 9 "C0G" V 8000 2900 50  0000 L CNN "Dielectric"
+	1    7850 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C?
+U 1 1 54D16D5E
+P 7050 2800
+F 0 "C?" V 6900 2900 60  0000 L CNN
+F 1 "15pF" V 7000 2900 60  0000 L CNN
+F 2 "" H 6950 2800 60  0001 C CNN
+F 3 "" H 7050 2900 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7050 2800 60  0001 C CNN "Manufacturer"
+F 5 "CL31C150JBCNNNC" H 7050 2800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 7050 2800 60  0001 C CNN "Vendor"
+F 7 "1276-2809-1-ND" H 7050 2800 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 7100 2900 50  0000 L CNN "Voltage"
+F 9 "C0G" V 7200 2900 50  0000 L CNN "Dielectric"
+	1    7050 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 2100 7050 2550
+Wire Wire Line
+	7050 2400 7200 2400
+Wire Wire Line
+	7650 2400 7850 2400
+Wire Wire Line
+	7850 2100 7850 2550
+Wire Wire Line
+	7050 3050 7050 3200
+Wire Wire Line
+	7050 3200 7850 3200
+Wire Wire Line
+	7850 3200 7850 3050
+Wire Wire Line
+	7450 3200 7450 3250
+Connection ~ 7450 3200
+$Comp
+L GND #PWR?
+U 1 1 54D1831D
+P 7450 3250
+F 0 "#PWR?" H 7450 3000 60  0001 C CNN
+F 1 "GND" H 7450 3100 60  0000 C CNN
+F 2 "" H 7450 3250 60  0000 C CNN
+F 3 "" H 7450 3250 60  0000 C CNN
+	1    7450 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 2400
+Connection ~ 7850 2400
+Text Label 7050 2100 0    60   ~ 0
+OSC_IN
+Text Label 7850 2100 0    60   ~ 0
+OSC_OUT
+Wire Wire Line
+	7100 3950 7100 4100
 $EndSCHEMATC
