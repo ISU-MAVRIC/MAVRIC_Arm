@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 1/29/2015 2:28:12 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 1/29/2015 11:08:59 PM
 
 BeginCmp
 TimeStamp = /54D0C267;
@@ -354,14 +354,14 @@ BeginCmp
 TimeStamp = /54CCF49F/54CED079;
 Reference = D1;
 ValeurCmp = DIODESCH;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:Diode_MicroSMP;
 EndCmp
 
 BeginCmp
 TimeStamp = /54CCF49F/54CCFE3A;
 Reference = D2;
 ValeurCmp = DIODESCH;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:Diode_MicroSMP;
 EndCmp
 
 BeginCmp
@@ -375,14 +375,14 @@ BeginCmp
 TimeStamp = /54CCF49F/54CED0CF;
 Reference = L1;
 ValeurCmp = 2.2uH;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:Yuden_SMD_Power_Inductor_6060;
 EndCmp
 
 BeginCmp
 TimeStamp = /54CCF49F/54CEB603;
 Reference = L2;
 ValeurCmp = 2.2uH;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:Yuden_SMD_Power_Inductor_6060;
 EndCmp
 
 BeginCmp
@@ -417,91 +417,91 @@ BeginCmp
 TimeStamp = /54C887CD;
 Reference = P1;
 ValeurCmp = Servo 1;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54CECC05;
 Reference = P2;
 ValeurCmp = Shoulder Feedback;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C889EB;
 Reference = P3;
 ValeurCmp = Servo 2;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C88A27;
 Reference = P4;
 ValeurCmp = Servo 3;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54CF04B5;
 Reference = P5;
 ValeurCmp = Elbow Feedback;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C88A96;
 Reference = P6;
 ValeurCmp = Servo 4;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C47C8E;
 Reference = P7;
 ValeurCmp = RS485;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x2_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C88A7F;
 Reference = P8;
 ValeurCmp = ST_SWD_Connector;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x6_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C88AD6;
 Reference = P9;
 ValeurCmp = Servo 5;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54CD0BEE;
 Reference = P10;
 ValeurCmp = UIM240XX_Stepper_Conn;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x6_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C589AB;
 Reference = P11;
 ValeurCmp = Battery;
-IdModule  = ;
+IdModule  = Wire_Pads:SolderWirePad_2x_2-5mmDrill;
 EndCmp
 
 BeginCmp
 TimeStamp = /54C9E181;
 Reference = P12;
 ValeurCmp = SyRen;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x2_SMD_header;
 EndCmp
 
 BeginCmp
 TimeStamp = /54CA1701;
 Reference = P13;
 ValeurCmp = Raspberry Pi;
-IdModule  = ;
+IdModule  = MAVRIC_footprints:1x2_SMD_header;
 EndCmp
 
 BeginCmp
