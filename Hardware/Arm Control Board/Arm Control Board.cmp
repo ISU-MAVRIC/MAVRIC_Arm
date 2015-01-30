@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 1/29/2015 11:08:59 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 1/29/2015 11:54:16 PM
 
 BeginCmp
 TimeStamp = /54D0C267;
@@ -487,7 +487,7 @@ BeginCmp
 TimeStamp = /54C589AB;
 Reference = P11;
 ValeurCmp = Battery;
-IdModule  = Wire_Pads:SolderWirePad_2x_2-5mmDrill;
+IdModule  = MAVRIC_footprints:SolderWirePad_2x_2-5mmDrill;
 EndCmp
 
 BeginCmp

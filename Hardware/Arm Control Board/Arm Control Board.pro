@@ -1,4 +1,4 @@
-update=1/29/2015 11:23:52 PM
+update=1/29/2015 11:54:40 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -13,13 +13,11 @@ LibName2=device
 LibName3=conn
 LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
 LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
-[general]
-version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=Arm Control Board.net
-UseCmpFile=0
+UseCmpFile=1
 PadDrill=0.6
 PadDrillOvalY=0.6
 PadSizeH=1.5
@@ -35,3 +33,5 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[general]
+version=1
