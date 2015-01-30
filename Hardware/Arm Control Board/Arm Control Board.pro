@@ -1,4 +1,4 @@
-update=1/29/2015 1:53:00 PM
+update=1/29/2015 11:23:52 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -18,8 +18,8 @@ version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
-UseCmpFile=1
+LastNetListRead=Arm Control Board.net
+UseCmpFile=0
 PadDrill=0.6
 PadDrillOvalY=0.6
 PadSizeH=1.5
