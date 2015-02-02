@@ -3608,6 +3608,8 @@
 
   (gr_line (start 10.5 10.5) (end 11 10.5) (angle 90) (layer Edge.Cuts) (width 0.1))
 
+  (segment (start 100.5 137.25) (end 105.25 137.25) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA48B) (status 10))
+  (segment (start 105.25 137.25) (end 107.25 139.25) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA48C) (status 20))
   (segment (start 109.5 139.75) (end 108.5 139.75) (width 0.1) (layer B.Cu) (net 2))
   (via (at 109.5 139.75) (size 0.889) (layers F.Cu B.Cu) (net 2))
   (segment (start 108.5 139.75) (end 107.5 139.75) (width 0.1) (layer B.Cu) (net 2) (tstamp 54CDBE4F))
@@ -3635,8 +3637,6 @@
   (segment (start 100.25 133) (end 104 129.25) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA49C))
   (segment (start 100.25 133.5) (end 100.25 137) (width 0.254) (layer F.Cu) (net 2) (status 10))
   (segment (start 100.25 137) (end 100.5 137.25) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA48A) (status 30))
-  (segment (start 100.5 137.25) (end 105.25 137.25) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA48B) (status 10))
-  (segment (start 105.25 137.25) (end 107.25 139.25) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA48C) (status 20))
   (segment (start 107.25 139.25) (end 111 139.25) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA48D) (status 10))
   (segment (start 111 139.25) (end 113.25 137) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA48F))
   (segment (start 113.25 137) (end 116.25 137) (width 0.254) (layer F.Cu) (net 2) (tstamp 54CDA491) (status 20))
