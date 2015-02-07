@@ -357,7 +357,7 @@ Text Label 3350 7150 0    60   ~ 0
 Reg3+7v4
 Text Label 4400 7150 0    60   ~ 0
 Reg4+7v4
-Text Label 9300 2150 2    60   ~ 0
+Text Label 9300 2650 2    60   ~ 0
 Reg5+5v
 Text Label 10100 5750 2    60   ~ 0
 Reg5+5v
@@ -373,7 +373,7 @@ Text Label 1350 1250 0    60   ~ 0
 USART2_TX
 Text Label 9100 5750 2    60   ~ 0
 USART2_TX
-Text Label 9300 2250 2    60   ~ 0
+Text Label 9300 2750 2    60   ~ 0
 Reg6+3v3
 Text Label 7100 3950 2    60   ~ 0
 Reg6+3v3
@@ -532,13 +532,13 @@ Text Label 2250 5900 0    60   ~ 0
 ADC1_IN8_Shoulder
 Text Label 3700 5900 0    60   ~ 0
 ADC1_IN9_Elbow
-Text Label 1350 1450 0    60   ~ 0
+Text Label 1350 3900 0    60   ~ 0
 GPIO_PA4_Reg1EN
-Text Label 1350 1550 0    60   ~ 0
+Text Label 1350 4000 0    60   ~ 0
 GPIO_PA5_Reg2EN
-Text Label 1350 1650 0    60   ~ 0
+Text Label 1350 4100 0    60   ~ 0
 GPIO_PA6_Reg3EN
-Text Label 1350 1750 0    60   ~ 0
+Text Label 1350 4200 0    60   ~ 0
 GPIO_PA7_Reg4EN
 Text Label 1350 4850 0    60   ~ 0
 GPIO_PC4_Reg5EN
@@ -612,17 +612,17 @@ F 3 "" H 2800 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 9450 2050 800  800 
+S 9450 2550 800  800 
 U 54CCF49F
 F0 "Low Voltage Regulators" 60
 F1 "Low Voltage Regulators.sch" 60
-F2 "REG6EN" I L 9450 2550 60 
-F3 "REG6+3V3" O L 9450 2250 60 
-F4 "REG5EN" I L 9450 2450 60 
-F5 "REG5+5V" O L 9450 2150 60 
+F2 "REG6EN" I L 9450 3050 60 
+F3 "REG6+3V3" O L 9450 2750 60 
+F4 "REG5EN" I L 9450 2950 60 
+F5 "REG5+5V" O L 9450 2650 60 
 $EndSheet
 $Sheet
-S 9450 650  800  1050
+S 9450 650  850  1650
 U 54C63434
 F0 "7.4V Regulators" 60
 F1 "7V4 Regulators.sch" 60
@@ -634,10 +634,14 @@ F6 "REG1EN" I L 9450 1250 60
 F7 "REG2EN" I L 9450 1350 60 
 F8 "REG3EN" I L 9450 1450 60 
 F9 "REG4EN" I L 9450 1550 60 
+F10 "REG1CURRENT" I L 9450 1750 60 
+F11 "REG2CURRENT" I L 9450 1850 60 
+F12 "REG3CURRENT" I L 9450 1950 60 
+F13 "REG4CURRENT" I L 9450 2050 60 
 $EndSheet
-Text Label 9300 2450 2    60   ~ 0
+Text Label 9300 2950 2    60   ~ 0
 GPIO_PC4_Reg5EN
-Text Label 9300 2550 2    60   ~ 0
+Text Label 9300 3050 2    60   ~ 0
 GPIO_PC5_Reg6EN
 Text Label 6050 7150 0    60   ~ 0
 Reg5+5v
@@ -932,10 +936,6 @@ NoConn ~ 1200 3100
 NoConn ~ 1200 3200
 NoConn ~ 1200 3300
 NoConn ~ 1200 3800
-NoConn ~ 1200 3900
-NoConn ~ 1200 4000
-NoConn ~ 1200 4100
-NoConn ~ 1200 4200
 NoConn ~ 1200 4450
 NoConn ~ 1200 4550
 NoConn ~ 1200 4650
@@ -1054,7 +1054,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 5850 10100 5900
 Wire Wire Line
-	9450 2250 9300 2250
+	9450 2750 9300 2750
 Wire Wire Line
 	1200 5150 1350 5150
 Wire Wire Line
@@ -1175,7 +1175,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 7150 4400 7150
 Wire Wire Line
-	9450 2150 9300 2150
+	9450 2650 9300 2650
 Wire Wire Line
 	5900 7150 6050 7150
 Wire Wire Line
@@ -1298,13 +1298,13 @@ Wire Wire Line
 Wire Wire Line
 	3700 6050 3700 5900
 Wire Wire Line
-	1200 1450 1350 1450
+	1200 3900 1350 3900
 Wire Wire Line
-	1200 1550 1350 1550
+	1200 4000 1350 4000
 Wire Wire Line
-	1200 1650 1350 1650
+	1200 4100 1350 4100
 Wire Wire Line
-	1200 1750 1350 1750
+	1200 4200 1350 4200
 Wire Wire Line
 	1200 4850 1350 4850
 Wire Wire Line
@@ -1346,9 +1346,9 @@ Wire Wire Line
 Wire Wire Line
 	4000 4300 4150 4300
 Wire Wire Line
-	9450 2450 9300 2450
+	9450 2950 9300 2950
 Wire Wire Line
-	9450 2550 9300 2550
+	9450 3050 9300 3050
 Wire Wire Line
 	4050 1100 4050 950 
 Wire Wire Line
@@ -1423,4 +1423,36 @@ F 3 "" H 5800 2950 60  0000 C CNN
 	1    5800 2950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1200 1450 1350 1450
+Wire Wire Line
+	1200 1550 1350 1550
+Wire Wire Line
+	1200 1650 1350 1650
+Wire Wire Line
+	1200 1750 1350 1750
+Text Label 1350 1450 0    60   ~ 0
+ADC1_IN4_Reg1Cur
+Text Label 1350 1650 0    60   ~ 0
+ADC1_IN6_Reg3Cur
+Text Label 1350 1550 0    60   ~ 0
+ADC1_IN5_Reg2Cur
+Text Label 1350 1750 0    60   ~ 0
+ADC1_IN7_Reg4Cur
+Wire Wire Line
+	9450 2050 9300 2050
+Wire Wire Line
+	9450 1950 9300 1950
+Wire Wire Line
+	9450 1850 9300 1850
+Wire Wire Line
+	9450 1750 9300 1750
+Text Label 9300 1750 2    60   ~ 0
+ADC1_IN4_Reg1Cur
+Text Label 9300 1950 2    60   ~ 0
+ADC1_IN6_Reg3Cur
+Text Label 9300 1850 2    60   ~ 0
+ADC1_IN5_Reg2Cur
+Text Label 9300 2050 2    60   ~ 0
+ADC1_IN7_Reg4Cur
 $EndSCHEMATC
