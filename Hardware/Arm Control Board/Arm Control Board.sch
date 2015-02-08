@@ -305,7 +305,7 @@ F 3 "" H 4000 4350 60  0000 C CNN
 	1    4000 4350
 	1    0    0    -1  
 $EndComp
-Text Label 6450 650  0    60   ~ 0
+Text Label 6650 650  0    60   ~ 0
 VDD
 $Comp
 L GND #PWR012
@@ -320,7 +320,7 @@ F 3 "" H 10550 4900 60  0000 C CNN
 $EndComp
 Text Label 7250 3950 0    60   ~ 0
 VDD
-Text Label 5950 2250 0    60   ~ 0
+Text Label 5950 2050 0    60   ~ 0
 VDDA
 Text Label 10150 4000 0    60   ~ 0
 VDDA
@@ -556,7 +556,7 @@ Text Label 1350 2350 0    60   ~ 0
 SWDIO
 Text Label 1350 2450 0    60   ~ 0
 SWCLK
-Text Label 5950 2050 0    60   ~ 0
+Text Label 5950 1850 0    60   ~ 0
 NRST
 $Comp
 L ST_SWD_Connector P8
@@ -807,34 +807,34 @@ Reg5+5v
 $Comp
 L Capacitor C1
 U 1 1 54D0C267
-P 6400 2600
-F 0 "C1" V 6250 2700 60  0000 L CNN
-F 1 "4.7uF" V 6350 2700 60  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6300 2600 60  0001 C CNN
-F 3 "" H 6400 2700 60  0001 C CNN
-F 4 "Taiyo Yuden" H 6400 2600 60  0001 C CNN "Manufacturer"
-F 5 "GMK316F475ZG-T" H 6400 2600 60  0001 C CNN "Manufacturer Part #"
-F 6 "Digi-Key" H 6400 2600 60  0001 C CNN "Vendor"
-F 7 "587-2254-1-ND" H 6400 2600 60  0001 C CNN "Vendor Part #"
-F 8 "35V" V 6450 2700 50  0000 L CNN "Voltage"
-F 9 "Y5V" V 6550 2700 50  0000 L CNN "Dielectric"
-	1    6400 2600
+P 6400 2500
+F 0 "C1" V 6250 2600 60  0000 L CNN
+F 1 "4.7uF" V 6350 2600 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6300 2500 60  0001 C CNN
+F 3 "" H 6400 2600 60  0001 C CNN
+F 4 "Taiyo Yuden" H 6400 2500 60  0001 C CNN "Manufacturer"
+F 5 "GMK316F475ZG-T" H 6400 2500 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 6400 2500 60  0001 C CNN "Vendor"
+F 7 "587-2254-1-ND" H 6400 2500 60  0001 C CNN "Vendor Part #"
+F 8 "35V" V 6450 2600 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 6550 2600 50  0000 L CNN "Dielectric"
+	1    6400 2500
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR020
 U 1 1 54D0EC2B
-P 6400 2850
-F 0 "#PWR020" H 6400 2600 60  0001 C CNN
-F 1 "GND" H 6400 2700 60  0000 C CNN
-F 2 "" H 6400 2850 60  0000 C CNN
-F 3 "" H 6400 2850 60  0000 C CNN
-	1    6400 2850
+P 6400 2750
+F 0 "#PWR020" H 6400 2500 60  0001 C CNN
+F 1 "GND" H 6400 2600 60  0000 C CNN
+F 2 "" H 6400 2750 60  0000 C CNN
+F 3 "" H 6400 2750 60  0000 C CNN
+	1    6400 2750
 	1    0    0    -1  
 $EndComp
-Text Label 5950 1850 0    60   ~ 0
+Text Label 5950 1650 0    60   ~ 0
 OSC_IN
-Text Label 5950 1950 0    60   ~ 0
+Text Label 5950 1750 0    60   ~ 0
 OSC_OUT
 $Comp
 L Crystal X1
@@ -949,12 +949,12 @@ NoConn ~ 1200 5950
 $Comp
 L GND #PWR024
 U 1 1 54CB9E3A
-P 6650 1850
-F 0 "#PWR024" H 6650 1600 60  0001 C CNN
-F 1 "GND" H 6650 1700 60  0000 C CNN
-F 2 "" H 6650 1850 60  0000 C CNN
-F 3 "" H 6650 1850 60  0000 C CNN
-	1    6650 1850
+P 6650 1500
+F 0 "#PWR024" H 6650 1250 60  0001 C CNN
+F 1 "GND" H 6650 1350 60  0000 C CNN
+F 2 "" H 6650 1500 60  0000 C CNN
+F 3 "" H 6650 1500 60  0000 C CNN
+	1    6650 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1070,9 +1070,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 950  5800 950 
 Wire Wire Line
-	6450 1750 5800 1750
-Connection ~ 6450 1750
-Wire Wire Line
 	6450 1550 5800 1550
 Connection ~ 6450 1550
 Wire Wire Line
@@ -1083,11 +1080,9 @@ Wire Wire Line
 Connection ~ 6450 1150
 Wire Wire Line
 	5950 1050 5800 1050
-Wire Wire Line
-	5800 1650 6650 1650
 Connection ~ 5950 1050
 Wire Wire Line
-	5950 1450 5800 1450
+	5800 1450 6650 1450
 Connection ~ 5950 1450
 Wire Wire Line
 	5950 1250 5800 1250
@@ -1115,13 +1110,10 @@ Wire Wire Line
 	9250 4100 9250 4200
 Connection ~ 9250 4100
 Wire Wire Line
-	6450 2150 5800 2150
-Connection ~ 6450 2150
-Wire Wire Line
 	9650 4800 9650 4700
 Connection ~ 9650 4800
 Wire Wire Line
-	5800 2250 5950 2250
+	5800 2050 5950 2050
 Wire Wire Line
 	5800 850  5950 850 
 Connection ~ 5950 850 
@@ -1322,7 +1314,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 2450 1350 2450
 Wire Wire Line
-	5800 2050 5950 2050
+	5800 1850 5950 1850
 Wire Wire Line
 	5350 6000 5200 6000
 Wire Wire Line
@@ -1354,11 +1346,9 @@ Wire Wire Line
 Wire Wire Line
 	4050 1100 3850 1100
 Wire Wire Line
-	5800 2350 6400 2350
+	5800 1650 5950 1650
 Wire Wire Line
-	5800 1850 5950 1850
-Wire Wire Line
-	5800 1950 5950 1950
+	5800 1750 5950 1750
 Wire Wire Line
 	7050 2100 7050 2550
 Wire Wire Line
@@ -1385,42 +1375,37 @@ Wire Wire Line
 Connection ~ 8050 5750
 Connection ~ 8050 5850
 Wire Wire Line
-	5950 850  5950 1650
-Wire Wire Line
-	6650 1650 6650 1850
-Wire Wire Line
-	6450 650  6450 2150
+	6650 1450 6650 1500
 Connection ~ 6450 950 
-Connection ~ 5950 1650
 Wire Wire Line
 	5800 750  6450 750 
 Connection ~ 6450 750 
 $Comp
 L Capacitor C51
 U 1 1 54CC6722
-P 5800 2700
-F 0 "C51" V 5650 2800 60  0000 L CNN
-F 1 ".1uF" V 5750 2800 60  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5700 2700 60  0001 C CNN
-F 3 "" H 5800 2800 60  0001 C CNN
-F 4 "Samsung Electro-Mechanics" H 5800 2700 60  0001 C CNN "Manufacturer"
-F 5 "CL31F104MBCNNNC" H 5800 2700 60  0001 C CNN "Manufacturer Part #"
-F 6 "Digi-Key" H 5800 2700 60  0001 C CNN "Vendor"
-F 7 "1276-2854-1-ND" H 5800 2700 60  0001 C CNN "Vendor Part #"
-F 8 "50V" V 5850 2800 50  0000 L CNN "Voltage"
-F 9 "Y5V" V 5950 2800 50  0000 L CNN "Dielectric"
-	1    5800 2700
+P 5950 2500
+F 0 "C51" V 5800 2600 60  0000 L CNN
+F 1 ".1uF" V 5900 2600 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5850 2500 60  0001 C CNN
+F 3 "" H 5950 2600 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 5950 2500 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 5950 2500 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 5950 2500 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 5950 2500 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 6000 2600 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 6100 2600 50  0000 L CNN "Dielectric"
+	1    5950 2500
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR025
 U 1 1 54CC691C
-P 5800 2950
-F 0 "#PWR025" H 5800 2700 60  0001 C CNN
-F 1 "GND" H 5800 2800 60  0000 C CNN
-F 2 "" H 5800 2950 60  0000 C CNN
-F 3 "" H 5800 2950 60  0000 C CNN
-	1    5800 2950
+P 5950 2750
+F 0 "#PWR025" H 5950 2500 60  0001 C CNN
+F 1 "GND" H 5950 2600 60  0000 C CNN
+F 2 "" H 5950 2750 60  0000 C CNN
+F 3 "" H 5950 2750 60  0000 C CNN
+	1    5950 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1455,4 +1440,32 @@ Text Label 9300 1850 2    60   ~ 0
 ADC1_IN5_Reg2Cur
 Text Label 9300 2050 2    60   ~ 0
 ADC1_IN7_Reg4Cur
+NoConn ~ 1200 4300
+Wire Wire Line
+	5950 850  5950 1450
+Wire Wire Line
+	6450 650  6450 1550
+Wire Wire Line
+	5800 2250 5950 2250
+Wire Wire Line
+	5800 2150 6400 2150
+Wire Wire Line
+	6400 2150 6400 2250
+Wire Wire Line
+	6450 650  6650 650 
+Wire Wire Line
+	5800 1950 6650 1950
+Wire Wire Line
+	6650 1950 6650 2000
+$Comp
+L GND #PWR?
+U 1 1 54D8F98A
+P 6650 2000
+F 0 "#PWR?" H 6650 1750 60  0001 C CNN
+F 1 "GND" H 6650 1850 60  0000 C CNN
+F 2 "" H 6650 2000 60  0000 C CNN
+F 3 "" H 6650 2000 60  0000 C CNN
+	1    6650 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
