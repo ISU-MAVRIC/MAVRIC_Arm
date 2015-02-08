@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 1/29/2015 11:54:16 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 2/8/2015 3:13:14 PM
 
 BeginCmp
 TimeStamp = /54D0C267;
@@ -351,6 +351,13 @@ IdModule  = Capacitors_SMD:C_1206_HandSoldering;
 EndCmp
 
 BeginCmp
+TimeStamp = /54CC6722;
+Reference = C51;
+ValeurCmp = .1uF;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
 TimeStamp = /54CCF49F/54CED079;
 Reference = D1;
 ValeurCmp = DIODESCH;
@@ -505,6 +512,13 @@ IdModule  = MAVRIC_footprints:1x2_SMD_header;
 EndCmp
 
 BeginCmp
+TimeStamp = /54DB2297;
+Reference = P14;
+ValeurCmp = Gripper Force Fdbk;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
+EndCmp
+
+BeginCmp
 TimeStamp = /54CCF49F/54CED0DB;
 Reference = R1;
 ValeurCmp = 49.9k;
@@ -617,6 +631,62 @@ IdModule  = Resistors_SMD:R_1206_HandSoldering;
 EndCmp
 
 BeginCmp
+TimeStamp = /54C63434/54D6D916;
+Reference = R17;
+ValeurCmp = 20m;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D754B9;
+Reference = R18;
+ValeurCmp = 20m;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D6FAC2;
+Reference = R19;
+ValeurCmp = 8.06k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D754C5;
+Reference = R20;
+ValeurCmp = 8.06k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D7930A;
+Reference = R21;
+ValeurCmp = 20m;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D7CB34;
+Reference = R22;
+ValeurCmp = 20m;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D79316;
+Reference = R23;
+ValeurCmp = 8.06k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D7CB40;
+Reference = R24;
+ValeurCmp = 8.06k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
 TimeStamp = /54C9C8AC;
 Reference = U1;
 ValeurCmp = STM32F401RCT6;
@@ -677,6 +747,34 @@ TimeStamp = /54C63434/54CCD8B1;
 Reference = U9;
 ValeurCmp = AP65552SP-13;
 IdModule  = SMD_Packages:SOIC-8-N-1EP;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D6C736;
+Reference = U10;
+ValeurCmp = ZXCT1107;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Transistor_Handsoldering_RevB_14Mar2014;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D754AD;
+Reference = U11;
+ValeurCmp = ZXCT1107;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Transistor_Handsoldering_RevB_14Mar2014;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D792FE;
+Reference = U12;
+ValeurCmp = ZXCT1107;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Transistor_Handsoldering_RevB_14Mar2014;
+EndCmp
+
+BeginCmp
+TimeStamp = /54C63434/54D7CB28;
+Reference = U13;
+ValeurCmp = ZXCT1107;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Transistor_Handsoldering_RevB_14Mar2014;
 EndCmp
 
 BeginCmp
