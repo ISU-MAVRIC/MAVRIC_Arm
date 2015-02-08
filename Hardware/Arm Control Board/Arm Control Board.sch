@@ -220,12 +220,12 @@ $EndComp
 $Comp
 L STM32F401RCT6 U1
 U 3 1 54C9D282
-P 1000 4450
-F 0 "U1" H 850 4550 60  0000 C CNN
-F 1 "STM32F401RCT6" V 650 4100 60  0000 C CNN
-F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 1000 2850 60  0001 C CNN
-F 3 "" H 1000 2850 60  0000 C CNN
-	3    1000 4450
+P 1000 4550
+F 0 "U1" H 850 4650 60  0000 C CNN
+F 1 "STM32F401RCT6" V 650 4200 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 1000 2950 60  0001 C CNN
+F 3 "" H 1000 2950 60  0000 C CNN
+	3    1000 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -391,19 +391,19 @@ Text Label 4400 6900 0    60   ~ 0
 Servo4_PWM
 Text Label 6050 6900 0    60   ~ 0
 Servo5_PWM
-Text Label 1350 5050 0    60   ~ 0
+Text Label 1350 5150 0    60   ~ 0
 TIM3_CH1_EE
 Text Label 4000 3500 2    60   ~ 0
 TIM3_CH1_EE
-Text Label 1350 5150 0    60   ~ 0
+Text Label 1350 5250 0    60   ~ 0
 TIM3_CH2_EE
 Text Label 4000 3700 2    60   ~ 0
 TIM3_CH2_EE
-Text Label 1350 5250 0    60   ~ 0
+Text Label 1350 5350 0    60   ~ 0
 TIM3_CH3_EE
 Text Label 4000 3900 2    60   ~ 0
 TIM3_CH3_EE
-Text Label 1350 5350 0    60   ~ 0
+Text Label 1350 5450 0    60   ~ 0
 TIM3_CH4_EE
 Text Label 5600 4000 0    60   ~ 0
 Servo3_PWM
@@ -540,9 +540,9 @@ Text Label 1350 4100 0    60   ~ 0
 GPIO_PA6_Reg3EN
 Text Label 1350 4200 0    60   ~ 0
 GPIO_PA7_Reg4EN
-Text Label 1350 4850 0    60   ~ 0
-GPIO_PC4_Reg5EN
 Text Label 1350 4950 0    60   ~ 0
+GPIO_PC4_Reg5EN
+Text Label 1350 5050 0    60   ~ 0
 GPIO_PC5_Reg6EN
 Text Label 9300 1250 2    60   ~ 0
 GPIO_PA4_Reg1EN
@@ -936,12 +936,12 @@ NoConn ~ 1200 3100
 NoConn ~ 1200 3200
 NoConn ~ 1200 3300
 NoConn ~ 1200 3800
-NoConn ~ 1200 4450
-NoConn ~ 1200 4550
 NoConn ~ 1200 4650
+NoConn ~ 1200 4550
 NoConn ~ 1200 4750
-NoConn ~ 1200 5450
+NoConn ~ 1200 4850
 NoConn ~ 1200 5550
+NoConn ~ 1200 6050
 NoConn ~ 1200 5650
 NoConn ~ 1200 5750
 NoConn ~ 1200 5850
@@ -1056,7 +1056,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 2750 9300 2750
 Wire Wire Line
-	1200 5150 1350 5150
+	1200 5250 1350 5250
 Wire Wire Line
 	5150 3700 5000 3700
 Wire Wire Line
@@ -1215,20 +1215,20 @@ Wire Wire Line
 Wire Wire Line
 	6050 7050 6050 6900
 Wire Wire Line
-	1200 5050 1350 5050
+	1200 5150 1350 5150
 Wire Wire Line
 	4150 3500 4000 3500
 Wire Wire Line
 	4150 3600 3550 3600
 Wire Wire Line
-	1200 5250 1350 5250
+	1200 5350 1350 5350
 Wire Wire Line
 	2350 1850 2350 1200
 Wire Wire Line
 	2950 1300 2950 1200
 Connection ~ 2950 1200
 Wire Wire Line
-	1200 5350 1350 5350
+	1200 5450 1350 5450
 Wire Wire Line
 	5000 3800 5600 3800
 Wire Wire Line
@@ -1306,9 +1306,9 @@ Wire Wire Line
 Wire Wire Line
 	1200 4200 1350 4200
 Wire Wire Line
-	1200 4850 1350 4850
-Wire Wire Line
 	1200 4950 1350 4950
+Wire Wire Line
+	1200 5050 1350 5050
 Wire Wire Line
 	9450 1250 9300 1250
 Wire Wire Line
