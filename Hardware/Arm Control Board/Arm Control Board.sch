@@ -379,7 +379,7 @@ Text Label 7100 3450 2    60   ~ 0
 Reg6+3v3
 Text Label 5600 3400 0    60   ~ 0
 Reg6+3v3
-Text Label 5600 3600 0    60   ~ 0
+Text Label 5600 4200 0    60   ~ 0
 Servo1_PWM
 Text Label 1150 6900 0    60   ~ 0
 Servo1_PWM
@@ -393,27 +393,27 @@ Text Label 6050 6900 0    60   ~ 0
 Servo5_PWM
 Text Label 1350 5150 0    60   ~ 0
 TIM3_CH1_EE
-Text Label 4000 3500 2    60   ~ 0
+Text Label 4000 4100 2    60   ~ 0
 TIM3_CH1_EE
 Text Label 1350 5250 0    60   ~ 0
 TIM3_CH2_EE
-Text Label 4000 3700 2    60   ~ 0
+Text Label 4000 3900 2    60   ~ 0
 TIM3_CH2_EE
 Text Label 1350 5350 0    60   ~ 0
 TIM3_CH3_EE
-Text Label 4000 3900 2    60   ~ 0
+Text Label 4000 3700 2    60   ~ 0
 TIM3_CH3_EE
 Text Label 1350 5450 0    60   ~ 0
 TIM3_CH4_EE
-Text Label 5600 4000 0    60   ~ 0
+Text Label 5600 3800 0    60   ~ 0
 Servo3_PWM
-Text Label 5600 4200 0    60   ~ 0
+Text Label 5600 3600 0    60   ~ 0
 Servo4_PWM
 Text Label 1350 3400 0    60   ~ 0
 TIM4_CH1_EE
-Text Label 5150 3700 0    60   ~ 0
+Text Label 5150 4300 0    60   ~ 0
 TIM4_CH1_EE
-Text Label 3550 3600 2    60   ~ 0
+Text Label 3550 4200 2    60   ~ 0
 Servo5_PWM
 $Comp
 L UIM240XX_Conn P10
@@ -454,11 +454,11 @@ Text Label 1350 3600 0    60   ~ 0
 GPIO_PB8_Direction
 Text Label 1350 3700 0    60   ~ 0
 GPIO_PB9_Enable
-Text Label 4000 4100 2    60   ~ 0
+Text Label 4000 3500 2    60   ~ 0
 TIM3_CH4_EE
-Text Label 5600 3800 0    60   ~ 0
+Text Label 5600 4000 0    60   ~ 0
 Servo2_PWM
-Text Label 5150 3900 0    60   ~ 0
+Text Label 5150 4100 0    60   ~ 0
 TIM4_CH2_Step
 Text Label 7950 5000 2    60   ~ 0
 Step_Direction
@@ -466,15 +466,15 @@ Text Label 7950 5100 2    60   ~ 0
 Step_Step
 Text Label 7950 5200 2    60   ~ 0
 Step_Enable
-Text Label 3550 3800 2    60   ~ 0
-Step_Step
-Text Label 5150 4100 0    60   ~ 0
-GPIO_PB8_Direction
-Text Label 5150 4300 0    60   ~ 0
-GPIO_PB9_Enable
 Text Label 3550 4000 2    60   ~ 0
+Step_Step
+Text Label 5150 3900 0    60   ~ 0
+GPIO_PB8_Direction
+Text Label 5150 3700 0    60   ~ 0
+GPIO_PB9_Enable
+Text Label 3550 3800 2    60   ~ 0
 Step_Direction
-Text Label 3550 4200 2    60   ~ 0
+Text Label 3550 3600 2    60   ~ 0
 Step_Enable
 $Comp
 L Actuator_Pot P2

@@ -2,3 +2,4 @@
 *.bck
 *.db
 $*
+*.kicad_pcb-bak
