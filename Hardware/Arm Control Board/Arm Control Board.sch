@@ -22,12 +22,12 @@ $EndDescr
 $Comp
 L RS485 P7
 U 1 1 54C47C8E
-P 9650 5600
-F 0 "P7" H 9650 5750 50  0000 C CNN
-F 1 "RS485" H 9650 5450 50  0000 C CNN
-F 2 "MAVRIC_footprints:1x2_SMD_header" H 9650 5600 60  0001 C CNN
-F 3 "" H 9650 5600 60  0000 C CNN
-	1    9650 5600
+P 9650 5850
+F 0 "P7" H 9650 6050 50  0000 C CNN
+F 1 "RS485" H 9650 5650 50  0000 C CNN
+F 2 "MAVRIC_footprints:1x2_SMD_header" H 9650 5850 60  0001 C CNN
+F 3 "" H 9650 5850 60  0000 C CNN
+	1    9650 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1475,14 +1475,8 @@ Text Label 4150 1200 0    60   ~ 0
 485_B
 Text Label 4150 1300 0    60   ~ 0
 485_A
-Wire Wire Line
-	9450 5550 9300 5550
-Wire Wire Line
-	9450 5650 9300 5650
-Text Label 9300 5550 2    60   ~ 0
+Text Label 9250 5450 2    60   ~ 0
 485_B
-Text Label 9300 5650 2    60   ~ 0
-485_A
 $Comp
 L Actuator_Pot P14
 U 1 1 54DB2297
@@ -1519,4 +1513,75 @@ Wire Wire Line
 	5250 6050 5250 5900
 Text Label 5250 5900 0    60   ~ 0
 ADC1_IN10_GripForce
+Wire Wire Line
+	9300 5750 9450 5750
+Wire Wire Line
+	9450 5850 9300 5850
+Wire Wire Line
+	9450 5950 9400 5950
+Wire Wire Line
+	9400 5950 9400 6150
+$Comp
+L GND #PWR?
+U 1 1 54E4E142
+P 9400 6150
+F 0 "#PWR?" H 9400 5900 60  0001 C CNN
+F 1 "GND" H 9400 6000 60  0000 C CNN
+F 2 "" H 9400 6150 60  0000 C CNN
+F 3 "" H 9400 6150 60  0000 C CNN
+	1    9400 6150
+	1    0    0    -1  
+$EndComp
+Text Label 9250 6200 2    60   ~ 0
+485_A
+Wire Wire Line
+	9300 5850 9300 6200
+Wire Wire Line
+	9300 6200 9250 6200
+Wire Wire Line
+	9250 5450 9300 5450
+Wire Wire Line
+	9300 5450 9300 5750
+$Comp
+L Resistor R?
+U 1 1 54E522EE
+P 9150 5800
+F 0 "R?" V 9000 5900 60  0000 L CNN
+F 1 "R_T" V 9100 5900 60  0000 L CNN
+F 2 "" H 9050 5800 60  0001 C CNN
+F 3 "" H 9150 5900 60  0001 C CNN
+F 4 "Value" H 9150 5800 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 9150 5800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 9150 5800 60  0001 C CNN "Vendor"
+F 7 "Value" H 9150 5800 60  0001 C CNN "Vendor Part #"
+F 8 "1/10W" V 9200 5900 50  0000 L CNN "Power"
+F 9 "5%" V 9300 5900 50  0000 L CNN "Tolerance"
+	1    9150 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9150 5550 9300 5550
+Connection ~ 9300 5550
+Wire Wire Line
+	9150 6050 9300 6050
+Connection ~ 9300 6050
+Text Label 9300 4650 2    60   ~ 0
+USART1_TX
+Text Label 9300 4550 2    60   ~ 0
+USART1_RX
+$Comp
+L RS232 P?
+U 1 1 54E5BB0C
+P 9650 4600
+F 0 "P?" H 9650 4750 50  0000 C CNN
+F 1 "RS232" H 9650 4450 50  0000 C CNN
+F 2 "" H 9650 4600 60  0000 C CNN
+F 3 "" H 9650 4600 60  0000 C CNN
+	1    9650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4550 9300 4550
+Wire Wire Line
+	9300 4650 9450 4650
 $EndSCHEMATC
