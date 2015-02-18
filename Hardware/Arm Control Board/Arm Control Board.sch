@@ -956,6 +956,141 @@ F 3 "" H 6650 1500 60  0000 C CNN
 	1    6650 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Capacitor C51
+U 1 1 54CC6722
+P 5950 2500
+F 0 "C51" V 5800 2600 60  0000 L CNN
+F 1 ".1uF" V 5900 2600 60  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5850 2500 60  0001 C CNN
+F 3 "" H 5950 2600 60  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 5950 2500 60  0001 C CNN "Manufacturer"
+F 5 "CL31F104MBCNNNC" H 5950 2500 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 5950 2500 60  0001 C CNN "Vendor"
+F 7 "1276-2854-1-ND" H 5950 2500 60  0001 C CNN "Vendor Part #"
+F 8 "50V" V 6000 2600 50  0000 L CNN "Voltage"
+F 9 "Y5V" V 6100 2600 50  0000 L CNN "Dielectric"
+	1    5950 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 54CC691C
+P 5950 2750
+F 0 "#PWR025" H 5950 2500 60  0001 C CNN
+F 1 "GND" H 5950 2600 60  0000 C CNN
+F 2 "" H 5950 2750 60  0000 C CNN
+F 3 "" H 5950 2750 60  0000 C CNN
+	1    5950 2750
+	1    0    0    -1  
+$EndComp
+Text Label 1350 1450 0    60   ~ 0
+ADC1_IN4_Reg1Cur
+Text Label 1350 1650 0    60   ~ 0
+ADC1_IN6_Reg3Cur
+Text Label 1350 1550 0    60   ~ 0
+ADC1_IN5_Reg2Cur
+Text Label 1350 1750 0    60   ~ 0
+ADC1_IN7_Reg4Cur
+Text Label 9300 1750 2    60   ~ 0
+ADC1_IN4_Reg1Cur
+Text Label 9300 1950 2    60   ~ 0
+ADC1_IN6_Reg3Cur
+Text Label 9300 1850 2    60   ~ 0
+ADC1_IN5_Reg2Cur
+Text Label 9300 2050 2    60   ~ 0
+ADC1_IN7_Reg4Cur
+NoConn ~ 1200 4300
+$Comp
+L GND #PWR026
+U 1 1 54D8F98A
+P 6650 2000
+F 0 "#PWR026" H 6650 1750 60  0001 C CNN
+F 1 "GND" H 6650 1850 60  0000 C CNN
+F 2 "" H 6650 2000 60  0000 C CNN
+F 3 "" H 6650 2000 60  0000 C CNN
+	1    6650 2000
+	1    0    0    -1  
+$EndComp
+Text Label 1350 4550 0    60   ~ 0
+ADC1_IN10_GripForce
+Text Label 4150 1200 0    60   ~ 0
+485_B
+Text Label 4150 1300 0    60   ~ 0
+485_A
+Text Label 9100 5450 2    60   ~ 0
+485_B
+$Comp
+L Actuator_Pot P14
+U 1 1 54DB2297
+P 4900 6150
+F 0 "P14" H 4900 6350 50  0000 C CNN
+F 1 "Gripper Force Fdbk" H 4950 5950 50  0000 C CNN
+F 2 "MAVRIC_footprints:1x3_SMD_header" H 4900 6150 60  0001 C CNN
+F 3 "" H 4900 6150 60  0000 C CNN
+	1    4900 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 54DB229D
+P 5250 6350
+F 0 "#PWR027" H 5250 6100 60  0001 C CNN
+F 1 "GND" H 5250 6200 60  0000 C CNN
+F 2 "" H 5250 6350 60  0000 C CNN
+F 3 "" H 5250 6350 60  0000 C CNN
+	1    5250 6350
+	1    0    0    -1  
+$EndComp
+Text Label 5250 6150 0    60   ~ 0
+Reg6+3v3
+Text Label 5250 5900 0    60   ~ 0
+ADC1_IN10_GripForce
+$Comp
+L GND #PWR?
+U 1 1 54E4E142
+P 9400 6150
+F 0 "#PWR?" H 9400 5900 60  0001 C CNN
+F 1 "GND" H 9400 6000 60  0000 C CNN
+F 2 "" H 9400 6150 60  0000 C CNN
+F 3 "" H 9400 6150 60  0000 C CNN
+	1    9400 6150
+	1    0    0    -1  
+$EndComp
+Text Label 9100 6150 2    60   ~ 0
+485_A
+$Comp
+L Resistor R?
+U 1 1 54E522EE
+P 9200 5800
+F 0 "R?" V 9050 5900 60  0000 L CNN
+F 1 "100" V 9150 5900 60  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9100 5800 60  0001 C CNN
+F 3 "" H 9200 5900 60  0001 C CNN
+F 4 "Panasonic" H 9200 5800 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-8GEYJ101V" H 9200 5800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digi-Key" H 9200 5800 60  0001 C CNN "Vendor"
+F 7 "P100ECT-ND" H 9200 5800 60  0001 C CNN "Vendor Part #"
+F 8 "1/4W" V 9250 5900 50  0000 L CNN "Power"
+F 9 "5%" V 9350 5900 50  0000 L CNN "Tolerance"
+	1    9200 5800
+	0    -1   -1   0   
+$EndComp
+Text Label 9300 4650 2    60   ~ 0
+USART1_TX
+Text Label 9300 4550 2    60   ~ 0
+USART1_RX
+$Comp
+L RS232 P?
+U 1 1 54E5BB0C
+P 9650 4600
+F 0 "P?" H 9650 4750 50  0000 C CNN
+F 1 "RS232" H 9650 4450 50  0000 C CNN
+F 2 "" H 9650 4600 60  0000 C CNN
+F 3 "" H 9650 4600 60  0000 C CNN
+	1    9650 4600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4150 1200 3850 1200
 Wire Wire Line
@@ -965,9 +1100,13 @@ Wire Wire Line
 Wire Wire Line
 	4050 1400 4050 1600
 Wire Wire Line
-	10450 4950 10600 4950
+	10450 4950 10550 4950
 Wire Wire Line
-	10400 5050 10600 5050
+	10550 4950 10600 4950
+Wire Wire Line
+	10400 5050 10550 5050
+Wire Wire Line
+	10550 5050 10600 5050
 Wire Wire Line
 	1000 7250 1150 7250
 Wire Wire Line
@@ -1041,7 +1180,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 1850 1200 1850
 Wire Wire Line
-	2350 1200 3100 1200
+	2350 1200 2950 1200
+Wire Wire Line
+	2950 1200 3100 1200
 Wire Wire Line
 	9450 5050 9300 5050
 Wire Wire Line
@@ -1081,7 +1222,9 @@ Wire Wire Line
 	5950 1050 5800 1050
 Connection ~ 5950 1050
 Wire Wire Line
-	5800 1450 6650 1450
+	5800 1450 5950 1450
+Wire Wire Line
+	5950 1450 6650 1450
 Connection ~ 5950 1450
 Wire Wire Line
 	5950 1250 5800 1250
@@ -1091,7 +1234,9 @@ Wire Wire Line
 Wire Wire Line
 	9650 3600 9650 3700
 Wire Wire Line
-	7250 3450 7250 3700
+	7250 3450 7250 3600
+Wire Wire Line
+	7250 3600 7250 3700
 Connection ~ 7250 3600
 Wire Wire Line
 	7650 3600 7650 3700
@@ -1117,13 +1262,17 @@ Wire Wire Line
 	5800 850  5950 850 
 Connection ~ 5950 850 
 Wire Wire Line
-	10150 3500 10150 3700
+	10150 3500 10150 3600
+Wire Wire Line
+	10150 3600 10150 3700
 Connection ~ 9650 3600
 Connection ~ 10150 3600
 Wire Wire Line
 	10550 3600 10550 3700
 Wire Wire Line
-	10550 4200 10550 4400
+	10550 4200 10550 4300
+Wire Wire Line
+	10550 4300 10550 4400
 Wire Wire Line
 	10150 4300 10150 4200
 Connection ~ 10150 4300
@@ -1146,9 +1295,35 @@ Connection ~ 10550 4300
 Wire Wire Line
 	10150 3600 10550 3600
 Wire Wire Line
-	7250 4300 10550 4300
+	7250 4300 7650 4300
 Wire Wire Line
-	7100 3600 9650 3600
+	7650 4300 8050 4300
+Wire Wire Line
+	8050 4300 8450 4300
+Wire Wire Line
+	8450 4300 8850 4300
+Wire Wire Line
+	8850 4300 9250 4300
+Wire Wire Line
+	9250 4300 9650 4300
+Wire Wire Line
+	9650 4300 10150 4300
+Wire Wire Line
+	10150 4300 10550 4300
+Wire Wire Line
+	7100 3600 7250 3600
+Wire Wire Line
+	7250 3600 7650 3600
+Wire Wire Line
+	7650 3600 8050 3600
+Wire Wire Line
+	8050 3600 8450 3600
+Wire Wire Line
+	8450 3600 8850 3600
+Wire Wire Line
+	8850 3600 9250 3600
+Wire Wire Line
+	9250 3600 9650 3600
 Wire Wire Line
 	9450 750  9300 750 
 Wire Wire Line
@@ -1349,17 +1524,23 @@ Wire Wire Line
 Wire Wire Line
 	5800 1750 5950 1750
 Wire Wire Line
-	7100 1200 7100 1650
+	7100 1200 7100 1500
+Wire Wire Line
+	7100 1500 7100 1650
 Wire Wire Line
 	7100 1500 7250 1500
 Wire Wire Line
 	7750 1500 7900 1500
 Wire Wire Line
-	7900 1200 7900 1650
+	7900 1200 7900 1500
+Wire Wire Line
+	7900 1500 7900 1650
 Wire Wire Line
 	7100 2150 7100 2300
 Wire Wire Line
-	7100 2300 7900 2300
+	7100 2300 7500 2300
+Wire Wire Line
+	7500 2300 7900 2300
 Wire Wire Line
 	7900 2300 7900 2150
 Wire Wire Line
@@ -1379,34 +1560,6 @@ Connection ~ 6450 950
 Wire Wire Line
 	5800 750  6450 750 
 Connection ~ 6450 750 
-$Comp
-L Capacitor C51
-U 1 1 54CC6722
-P 5950 2500
-F 0 "C51" V 5800 2600 60  0000 L CNN
-F 1 ".1uF" V 5900 2600 60  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5850 2500 60  0001 C CNN
-F 3 "" H 5950 2600 60  0001 C CNN
-F 4 "Samsung Electro-Mechanics" H 5950 2500 60  0001 C CNN "Manufacturer"
-F 5 "CL31F104MBCNNNC" H 5950 2500 60  0001 C CNN "Manufacturer Part #"
-F 6 "Digi-Key" H 5950 2500 60  0001 C CNN "Vendor"
-F 7 "1276-2854-1-ND" H 5950 2500 60  0001 C CNN "Vendor Part #"
-F 8 "50V" V 6000 2600 50  0000 L CNN "Voltage"
-F 9 "Y5V" V 6100 2600 50  0000 L CNN "Dielectric"
-	1    5950 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR025
-U 1 1 54CC691C
-P 5950 2750
-F 0 "#PWR025" H 5950 2500 60  0001 C CNN
-F 1 "GND" H 5950 2600 60  0000 C CNN
-F 2 "" H 5950 2750 60  0000 C CNN
-F 3 "" H 5950 2750 60  0000 C CNN
-	1    5950 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 1450 1350 1450
 Wire Wire Line
@@ -1415,14 +1568,6 @@ Wire Wire Line
 	1200 1650 1350 1650
 Wire Wire Line
 	1200 1750 1350 1750
-Text Label 1350 1450 0    60   ~ 0
-ADC1_IN4_Reg1Cur
-Text Label 1350 1650 0    60   ~ 0
-ADC1_IN6_Reg3Cur
-Text Label 1350 1550 0    60   ~ 0
-ADC1_IN5_Reg2Cur
-Text Label 1350 1750 0    60   ~ 0
-ADC1_IN7_Reg4Cur
 Wire Wire Line
 	9450 2050 9300 2050
 Wire Wire Line
@@ -1431,19 +1576,22 @@ Wire Wire Line
 	9450 1850 9300 1850
 Wire Wire Line
 	9450 1750 9300 1750
-Text Label 9300 1750 2    60   ~ 0
-ADC1_IN4_Reg1Cur
-Text Label 9300 1950 2    60   ~ 0
-ADC1_IN6_Reg3Cur
-Text Label 9300 1850 2    60   ~ 0
-ADC1_IN5_Reg2Cur
-Text Label 9300 2050 2    60   ~ 0
-ADC1_IN7_Reg4Cur
-NoConn ~ 1200 4300
 Wire Wire Line
-	5950 850  5950 1450
+	5950 850  5950 1050
 Wire Wire Line
-	6450 650  6450 1550
+	5950 1050 5950 1250
+Wire Wire Line
+	5950 1250 5950 1450
+Wire Wire Line
+	6450 650  6450 750 
+Wire Wire Line
+	6450 750  6450 950 
+Wire Wire Line
+	6450 950  6450 1150
+Wire Wire Line
+	6450 1150 6450 1350
+Wire Wire Line
+	6450 1350 6450 1550
 Wire Wire Line
 	5800 2250 5950 2250
 Wire Wire Line
@@ -1456,51 +1604,8 @@ Wire Wire Line
 	5800 1950 6650 1950
 Wire Wire Line
 	6650 1950 6650 2000
-$Comp
-L GND #PWR026
-U 1 1 54D8F98A
-P 6650 2000
-F 0 "#PWR026" H 6650 1750 60  0001 C CNN
-F 1 "GND" H 6650 1850 60  0000 C CNN
-F 2 "" H 6650 2000 60  0000 C CNN
-F 3 "" H 6650 2000 60  0000 C CNN
-	1    6650 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 4550 1350 4550
-Text Label 1350 4550 0    60   ~ 0
-ADC1_IN10_GripForce
-Text Label 4150 1200 0    60   ~ 0
-485_B
-Text Label 4150 1300 0    60   ~ 0
-485_A
-Text Label 9250 5450 2    60   ~ 0
-485_B
-$Comp
-L Actuator_Pot P14
-U 1 1 54DB2297
-P 4900 6150
-F 0 "P14" H 4900 6350 50  0000 C CNN
-F 1 "Gripper Force Fdbk" H 4950 5950 50  0000 C CNN
-F 2 "MAVRIC_footprints:1x3_SMD_header" H 4900 6150 60  0001 C CNN
-F 3 "" H 4900 6150 60  0000 C CNN
-	1    4900 6150
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR027
-U 1 1 54DB229D
-P 5250 6350
-F 0 "#PWR027" H 5250 6100 60  0001 C CNN
-F 1 "GND" H 5250 6200 60  0000 C CNN
-F 2 "" H 5250 6350 60  0000 C CNN
-F 3 "" H 5250 6350 60  0000 C CNN
-	1    5250 6350
-	1    0    0    -1  
-$EndComp
-Text Label 5250 6150 0    60   ~ 0
-Reg6+3v3
 Wire Wire Line
 	5100 6250 5250 6250
 Wire Wire Line
@@ -1511,8 +1616,6 @@ Wire Wire Line
 	5100 6050 5250 6050
 Wire Wire Line
 	5250 6050 5250 5900
-Text Label 5250 5900 0    60   ~ 0
-ADC1_IN10_GripForce
 Wire Wire Line
 	9300 5750 9450 5750
 Wire Wire Line
@@ -1521,67 +1624,26 @@ Wire Wire Line
 	9450 5950 9400 5950
 Wire Wire Line
 	9400 5950 9400 6150
-$Comp
-L GND #PWR?
-U 1 1 54E4E142
-P 9400 6150
-F 0 "#PWR?" H 9400 5900 60  0001 C CNN
-F 1 "GND" H 9400 6000 60  0000 C CNN
-F 2 "" H 9400 6150 60  0000 C CNN
-F 3 "" H 9400 6150 60  0000 C CNN
-	1    9400 6150
-	1    0    0    -1  
-$EndComp
-Text Label 9250 6200 2    60   ~ 0
-485_A
 Wire Wire Line
-	9300 5850 9300 6200
+	9300 5850 9300 6150
 Wire Wire Line
-	9300 6200 9250 6200
+	9300 6150 9200 6150
 Wire Wire Line
-	9250 5450 9300 5450
+	9200 6150 9100 6150
+Wire Wire Line
+	9100 5450 9200 5450
+Wire Wire Line
+	9200 5450 9300 5450
 Wire Wire Line
 	9300 5450 9300 5750
-$Comp
-L Resistor R?
-U 1 1 54E522EE
-P 9150 5800
-F 0 "R?" V 9000 5900 60  0000 L CNN
-F 1 "R_T" V 9100 5900 60  0000 L CNN
-F 2 "" H 9050 5800 60  0001 C CNN
-F 3 "" H 9150 5900 60  0001 C CNN
-F 4 "Value" H 9150 5800 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 9150 5800 60  0001 C CNN "Manufacturer Part #"
-F 6 "Value" H 9150 5800 60  0001 C CNN "Vendor"
-F 7 "Value" H 9150 5800 60  0001 C CNN "Vendor Part #"
-F 8 "1/10W" V 9200 5900 50  0000 L CNN "Power"
-F 9 "5%" V 9300 5900 50  0000 L CNN "Tolerance"
-	1    9150 5800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9150 5550 9300 5550
-Connection ~ 9300 5550
-Wire Wire Line
-	9150 6050 9300 6050
-Connection ~ 9300 6050
-Text Label 9300 4650 2    60   ~ 0
-USART1_TX
-Text Label 9300 4550 2    60   ~ 0
-USART1_RX
-$Comp
-L RS232 P?
-U 1 1 54E5BB0C
-P 9650 4600
-F 0 "P?" H 9650 4750 50  0000 C CNN
-F 1 "RS232" H 9650 4450 50  0000 C CNN
-F 2 "" H 9650 4600 60  0000 C CNN
-F 3 "" H 9650 4600 60  0000 C CNN
-	1    9650 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9450 4550 9300 4550
 Wire Wire Line
 	9300 4650 9450 4650
+Wire Wire Line
+	9200 5550 9200 5450
+Connection ~ 9200 5450
+Wire Wire Line
+	9200 6050 9200 6150
+Connection ~ 9200 6150
 $EndSCHEMATC
