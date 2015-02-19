@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 2/8/2015 3:13:14 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 2/18/2015 9:31:23 PM
 
 BeginCmp
 TimeStamp = /54D0C267;
@@ -466,7 +466,7 @@ BeginCmp
 TimeStamp = /54C47C8E;
 Reference = P7;
 ValeurCmp = RS485;
-IdModule  = MAVRIC_footprints:1x2_SMD_header;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
 BeginCmp
@@ -515,6 +515,13 @@ BeginCmp
 TimeStamp = /54DB2297;
 Reference = P14;
 ValeurCmp = Gripper Force Fdbk;
+IdModule  = MAVRIC_footprints:1x3_SMD_header;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E5727F;
+Reference = P15;
+ValeurCmp = RS232;
 IdModule  = MAVRIC_footprints:1x3_SMD_header;
 EndCmp
 
@@ -683,6 +690,13 @@ BeginCmp
 TimeStamp = /54C63434/54D7CB40;
 Reference = R24;
 ValeurCmp = 8.06k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E522EE;
+Reference = R25;
+ValeurCmp = 100;
 IdModule  = Resistors_SMD:R_1206_HandSoldering;
 EndCmp
 
