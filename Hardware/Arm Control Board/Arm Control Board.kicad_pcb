@@ -67,8 +67,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 5.99948 5.99948)
-    (pad_drill 0)
+    (pad_size 6.858 6.858)
+    (pad_drill 3.50012)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (grid_origin 194.8 100.4)
@@ -3694,13 +3694,13 @@
     )
   )
 
-  (module Resistors_SMD:R_1206_HandSoldering (layer F.Cu) (tedit 54F52F9B) (tstamp 54D835DA)
+  (module Resistors_SMD:R_1206_HandSoldering (layer F.Cu) (tedit 54F53E1C) (tstamp 54D835DA)
     (at 180.75 87.45 90)
     (descr "Resistor SMD 1206, hand soldering")
     (tags "resistor 1206")
     (path /54C63434/54D6FAC2)
     (attr smd)
-    (fp_text reference R19 (at 1.45 -2.75 180) (layer F.SilkS)
+    (fp_text reference R19 (at 1.85 -2.15 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 8.06k (at 0.25 0.05 90) (layer F.SilkS) hide
@@ -4079,52 +4079,11 @@
       (net 2 GND))
   )
 
-  (module Mounting_Holes:MountingHole_3-5mm (layer F.Cu) (tedit 54F53D66) (tstamp 54F54363)
-    (at 245.2 57.6)
+  (module MAVRIC_footprints:PlatedMountingHole_3-5mm (layer F.Cu) (tedit 54F53EBD) (tstamp 54F54643)
+    (at 174 86)
     (descr "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
     (tags "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
-    (fp_text reference MountingHole_3-5mm (at -10.8 -3.4) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value VAL** (at 0 5.00126) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end 3.50012 0) (layer Cmts.User) (width 0.381))
-    (pad 1 thru_hole circle (at 0 0) (size 3.50012 3.50012) (drill 3.50012) (layers))
-  )
-
-  (module Mounting_Holes:MountingHole_3-5mm (layer F.Cu) (tedit 54F53D81) (tstamp 54F54391)
-    (at 170 143.8)
-    (descr "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
-    (tags "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
-    (fp_text reference MountingHole_3-5mm (at -4.4 -2.8 90) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value VAL** (at 0 5.00126) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end 3.50012 0) (layer Cmts.User) (width 0.381))
-    (pad 1 thru_hole circle (at 0 0) (size 3.50012 3.50012) (drill 3.50012) (layers))
-  )
-
-  (module Mounting_Holes:MountingHole_3-5mm (layer F.Cu) (tedit 54F53DAC) (tstamp 54F543AD)
-    (at 243.4 143.8)
-    (descr "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
-    (tags "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
-    (fp_text reference MountingHole_3-5mm (at 5 -4.8 90) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value VAL** (at 2.2 4.6) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end 3.50012 0) (layer Cmts.User) (width 0.381))
-    (pad 1 thru_hole circle (at 0 0) (size 3.50012 3.50012) (drill 3.50012) (layers))
-  )
-
-  (module Mounting_Holes:MountingHole_3-5mm (layer F.Cu) (tedit 54F53DD5) (tstamp 54F543C7)
-    (at 172.8 86.6)
-    (descr "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
-    (tags "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
+    (zone_connect 2)
     (fp_text reference MountingHole_3-5mm (at -4.6 2.8 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -4132,10 +4091,53 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 3.50012 0) (layer Cmts.User) (width 0.381))
-    (pad 1 thru_hole circle (at 0 0) (size 3.50012 3.50012) (drill 3.50012) (layers))
+    (pad 1 thru_hole circle (at 0 0) (size 6.858 6.858) (drill 3.50012) (layers *.Cu)
+      (zone_connect 2))
   )
 
-  (gr_text "MAVRIC Arm Board\nRev. 1   2/2/15" (at 247.2 75.4 90) (layer F.SilkS)
+  (module MAVRIC_footprints:PlatedMountingHole_3-5mm (layer F.Cu) (tedit 54F53F34) (tstamp 54F54363)
+    (at 245.2 57.6)
+    (descr "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
+    (tags "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
+    (fp_text reference MountingHole_3-5mm (at 3.2 12.2 90) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VAL** (at 0 5.00126) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.50012 0) (layer Cmts.User) (width 0.381))
+    (pad 1 thru_hole circle (at 0 0) (size 6.858 6.858) (drill 3.50012) (layers *.Cu))
+  )
+
+  (module MAVRIC_footprints:PlatedMountingHole_3-5mm (layer F.Cu) (tedit 54F53F2E) (tstamp 54F543AD)
+    (at 243.4 143.8)
+    (descr "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
+    (tags "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
+    (fp_text reference MountingHole_3-5mm (at 4.6 -3.4 90) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VAL** (at 0 5.00126) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.50012 0) (layer Cmts.User) (width 0.381))
+    (pad 1 thru_hole circle (at 0 0) (size 6.858 6.858) (drill 3.50012) (layers *.Cu))
+  )
+
+  (module MAVRIC_footprints:PlatedMountingHole_3-5mm (layer F.Cu) (tedit 54F53F31) (tstamp 54F54391)
+    (at 170 143.8)
+    (descr "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
+    (tags "Mounting hole, Befestigungsbohrung, 3,5mm, No Annular, Kein Restring,")
+    (fp_text reference MountingHole_3-5mm (at -4.2 -4.8 90) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VAL** (at 0 5.00126) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.50012 0) (layer Cmts.User) (width 0.381))
+    (pad 1 thru_hole circle (at 0 0) (size 6.858 6.858) (drill 3.50012) (layers *.Cu))
+  )
+
+  (gr_text "MAVRIC Arm Board\nRev. 1   2/2/15" (at 167.8 80.8 270) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 164 150) (end 250.4 150) (angle 90) (layer Edge.Cuts) (width 0.1))
