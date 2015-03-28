@@ -1,18 +1,9 @@
-update=2/11/2015 6:22:14 PM
+update=3/28/2015 10:52:16 AM
 version=1
 last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=
-[eeschema/libraries]
-LibName1=power
-LibName2=device
-LibName3=conn
-LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
-LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -48,3 +39,15 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
+[eeschema]
+version=1
+LibDir=../../../MAVRIC_Hardware/Kicad;../../../KiCadLib/Symbols
+[eeschema/libraries]
+LibName1=power
+LibName2=device
+LibName3=conn
+LibName4=C:/Users/Mark/Documents/GitHub/KiCadLib/Symbols/Passives
+LibName5=C:/Users/Mark/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
+LibName6=C:/Users/Danny/Documents/GitHub/MAVRIC_Hardware/Kicad/MAVRIClib
+LibName7=C:/Users/Danny/Documents/GitHub/KiCadLib/Symbols/Passives
+LibName8=Connectors
